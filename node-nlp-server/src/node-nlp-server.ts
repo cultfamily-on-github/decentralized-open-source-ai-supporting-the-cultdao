@@ -15,7 +15,8 @@ app.get("/getresponse/input/:input", async (request: any, response: any) => {
     }
 });
 
-console.log(process.argv[0])
-app.listen(3000, () => {
-    console.log(`Listen on http://localhost:3000...`);
+const port = Number(process.argv[2]) 
+
+app.listen(port, () => {
+    console.log(`Listen on http://localhost:${port}`);
 });
