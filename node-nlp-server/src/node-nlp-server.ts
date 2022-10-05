@@ -6,7 +6,13 @@ const nodeNLPService: NodeNLPService = NodeNLPService.getInstance()
 
 app.get("/getresponse/input/:input", async (request: any, response: any) => {
     const result: any = await nodeNLPService.getResponse(request.params.input)
-    response.send(result.answer);
+    if (result.answer === "") {
+        const pleaseHelpMeLearnMessage =
+            "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data."
+        response.send(result.answer);
+    } else {
+        response.send(result.answer);
+    }
 });
 
 console.log(process.argv[0])
