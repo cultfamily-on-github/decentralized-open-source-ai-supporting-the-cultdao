@@ -1,0 +1,17 @@
+{
+  "name": "node-nlp-server",
+  "version": "0.0.1",
+  "description": "CULT node nlp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cultdao"
+  ],
+  "author": "michael",
+  "license": "MIT",
+  "dependencies": {
+    "node-nlp": "^4.24.0"
+  }
+}

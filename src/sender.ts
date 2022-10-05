@@ -1,6 +1,6 @@
 import { Request } from 'https://deno.land/x/request@1.1.0/request.ts'
 import * as log from "https://deno.land/std/log/mod.ts";
-import { limitPerHour } from "./.env.ts"
+import { limitPerHour } from "../.env.ts"
 
 export class Sender {
     

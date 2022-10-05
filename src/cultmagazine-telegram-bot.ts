@@ -1,8 +1,8 @@
-import { Sender } from "./bot-ui-for-manual-updates/sender"
-import { telegramBotToken } from './src/telegram-bot-ui/.env.ts'
-import { ISubscriber } from "./data-model"
-import { PersistenceService } from "./persistence/persistence-service-ts"
+import { Sender } from "./sender.ts"
+import { ISubscriber } from "./data-model.ts"
+import { PersistenceService } from "./persistence-service.ts"
 import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_chatbot/mod.ts"
+import { telegramBotToken } from '../.env.ts'
 
 
 export class CultMagazineTelegramBot {
@@ -19,11 +19,11 @@ export class CultMagazineTelegramBot {
     private sender: Sender
     private persistenceService: PersistenceService
     private telegramBot: TelegramBot
+    private started = false
     
     private constructor() {
-        this.sender = Sender.getInstance()
+        // this.sender = Sender.getInstance()
         this.persistenceService = new PersistenceService()
-        this.startCULTGameOfTheDayReminderInterval()
         
         if (!telegramBotToken) throw new Error("Bot token is not provided");
         
@@ -43,7 +43,11 @@ export class CultMagazineTelegramBot {
 
     }
 
-    private startCULTGameOfTheDayReminderInterval() {
+    public startCULTGameOfTheDayReminderInterval() {
+        if (this.started) {
+            throw new Error(`The Game Of the Day Reminder Interval has already been started earlier.`)
+        }
+        this.started = true
         setInterval(async () => {
             const subscribers: ISubscriber[] = await this.persistenceService.readSubscribers()
             for (const subscriber of subscribers) {
