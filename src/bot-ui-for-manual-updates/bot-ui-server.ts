@@ -10,6 +10,8 @@ export class UIServer {
     private static pathToChatHandlingUIHTML = `${Deno.cwd()}/chat-handling-ui.html`
     private static counterOfFailingTrials = 0
 
+    private static sender: Sender = new Sender()
+
     public static serve() {
         const app = opine();
 
@@ -38,7 +40,7 @@ export class UIServer {
 
         app.get('/sendMessage/chatId/:chatId/textMessage/:textMessage', authorizationMiddleware, async (req: any, res: any) => {
                 console.log(`sending message ${req.params.textMessage} to chat id ${req.params.chatId}`)
-                await Sender.send(telegramBotToken, req.params.chatId, req.params.textMessage)
+                await UIServer.sender.send(telegramBotToken, req.params.chatId, req.params.textMessage)
                 res.send('sent successfully');
         });
 
@@ -60,7 +62,7 @@ export class UIServer {
         
         console.log(`http://localhost:${port}?apiKey=${apiKey}`)
 
-        Sender.startResetSecurityCounterInterval()
+        UIServer.sender.startResetSecurityCounterInterval()
         UIServer.startResetSecurityCounterInterval()
     }
 
