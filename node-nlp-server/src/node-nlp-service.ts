@@ -1,4 +1,7 @@
+import { trainingData } from "../training-data"
+
 const { NlpManager } = require('node-nlp');
+
 export class NodeNLPService {
 
     private static instance: NodeNLPService
@@ -22,21 +25,13 @@ export class NodeNLPService {
 
     private trainBrain() {
 
-        // Adds the utterances and intents for the NLP
-        this.brain.addDocument('en', 'goodbye for now', 'greetings.bye');
-        this.brain.addDocument('en', 'bye bye take care', 'greetings.bye');
-        this.brain.addDocument('en', 'okay see you later', 'greetings.bye');
-        this.brain.addDocument('en', 'bye for now', 'greetings.bye');
-        this.brain.addDocument('en', 'i must go', 'greetings.bye');
-        this.brain.addDocument('en', 'hello', 'greetings.hello');
-        this.brain.addDocument('en', 'hi', 'greetings.hello');
-        this.brain.addDocument('en', 'howdy', 'greetings.hello');
+        for (const entry of trainingData.utterancesToIntents) {
+            this.brain.addDocument(entry.language, entry.utterance, entry.intent);
+        }
 
-        // Train also the NLG
-        this.brain.addAnswer('en', 'greetings.bye', 'Till next time');
-        this.brain.addAnswer('en', 'greetings.bye', 'see you soon!');
-        this.brain.addAnswer('en', 'greetings.hello', 'Hey there!');
-        this.brain.addAnswer('en', 'greetings.hello', 'Greetings!');
+        for (const entry of trainingData.intentsToPotentialAnswers) {
+            this.brain.addAnswer(entry.language, entry.intent, entry.answer);
+        }
 
         (async () => {
             this.readyToRock = false
@@ -44,6 +39,7 @@ export class NodeNLPService {
             this.readyToRock = true
             this.brain.save();
         })();
+
     }
 
     public async getResponse(input: string): Promise<string> {
