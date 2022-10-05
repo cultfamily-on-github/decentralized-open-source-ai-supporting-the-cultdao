@@ -12,6 +12,7 @@
   "author": "michael",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.1",
     "node-nlp": "^4.24.0"
   }
 }
