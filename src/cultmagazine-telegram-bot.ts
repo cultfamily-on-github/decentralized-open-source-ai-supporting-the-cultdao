@@ -105,6 +105,7 @@ export class CultMagazineTelegramBot {
     public async getAnswer(input: string): Promise<string> {
 
         const requestURL = `${this.nlpServerURL}/getresponse/input/${input}`
+        console.log(`asking for an answer from ${requestURL}`)
         const response = await fetch(requestURL)
         const result = await response.json()
 

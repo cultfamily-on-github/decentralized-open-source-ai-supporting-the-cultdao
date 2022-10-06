@@ -20,6 +20,7 @@ export class NodeNLPService {
 
         this.brain = new NlpManager({ languages: ['en'], forceNER: true })
         this.trainBrain()
+        this.startTrainBrainInterval()
         
     }
 
@@ -60,4 +61,9 @@ export class NodeNLPService {
 
     }
 
+    private startTrainBrainInterval() {
+        setInterval(() => {
+            this.trainBrain()
+        }, 1000 * 60 * 60 * 24) // once a day
+    }
 }
