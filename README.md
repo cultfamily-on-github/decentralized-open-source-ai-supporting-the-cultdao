@@ -1,12 +1,16 @@
-# Cultmagazine For Telegram
-This repository is for the [CULT Mag News Bot](https://t.me/cultmagazine_bot).
+# Decentralized Open Source AI Supporting The CULTDAO 
+The goal of this repo is to leverage AI technology to support the [CULTDAO](https://cultdao.io) and with that values like freedom, fairness and love.  
 
-If you would like to improve its knowledge and with that its skills, you might want to update its [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).
+The content of this repository enables things like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).
 
 ## Features 
 1. Answer FAQs around the CULT according to the [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts)   
-2. Send daily reminder about the [CULT Game of the Day](https://cultplayground.org)   
-3. Send custom messages to inform subscribers around important news via the bot ui for manual updates  
+2. Send daily reminders - e.g. about the [CULT Game of the Day](https://cultplayground.org)   
+3. Send custom messages to inform subscribers around important news via the bot ui for manual updates    
+4. Provide AI related education to ensure that - if AI is used - the best AI is used to strengthen freedom, fairness and love 
+
+## Training Data
+If people would like to improve the skills of the [CULT Telegram Bot](https://t.me/cultmagazine_bot), they might want to update the corresponding [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).
 
 ## Ideas
 Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
