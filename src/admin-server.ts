@@ -33,8 +33,6 @@ function anonymizeReceivedMessages(receivedMessages: IMessage[]): IMessage[] {
     for (const receivedMessage of receivedMessages) {
         receivedMessage.chatID = 0
         receivedMessage.userName = ""
-        receivedMessage.firstName = ""
-        receivedMessage.lastName = ""
         anonymizedReceivedMessages.push(receivedMessage)
     }
 

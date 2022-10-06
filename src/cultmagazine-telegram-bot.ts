@@ -55,8 +55,6 @@ export class CultMagazineTelegramBot {
             const receivedMessage: IMessage = {
                 chatID: message.message.chat.id,
                 userName: message.message.from.username,
-                firstName: message.message.from.first_name,
-                lastName: message.message.from.last_name,
                 date: new Date().toISOString(),
                 text: message.message.text
             }
@@ -70,8 +68,6 @@ export class CultMagazineTelegramBot {
                 const newSubscriber: ISubscriber = {
                     chatID: message.message.chat.id,
                     userName: message.message.from.username,
-                    firstName: message.message.from.first_name,
-                    lastName: message.message.from.last_name
                 }
                 subscribers.push(newSubscriber)
 
@@ -88,8 +84,6 @@ export class CultMagazineTelegramBot {
             const sentMessage: IMessage = {
                 chatID: message.message.chat.id,
                 userName: message.message.from.username,
-                firstName: message.message.from.first_name,
-                lastName: message.message.from.last_name,
                 date: new Date().toISOString(),
                 text: text
             }
