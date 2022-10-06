@@ -66,7 +66,7 @@ deno run --allow-read --allow-net --allow-env --allow-write src/start-cult-teleg
 In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
-deno run --allow-read --allow-net --allow-env bot-ui-server.ts
+deno run --allow-read --allow-net --allow-env --unstable src/start-ui-server-for-manual-updates.ts 8085
 ```
 
 #### The Admin Server (incl. Sentiment Analyzer)
@@ -104,7 +104,7 @@ pm2 start src/start-cult-telegram-bot.ts --interpreter="deno" --interpreter-args
 In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
-pm2 start bot-ui-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net" -- 8443
+pm2 start src/start-ui-server-for-manual-updates.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --unstable" -- 8085
 ```
 
 #### The Admin Server (incl. Sentiment Analyzer)
