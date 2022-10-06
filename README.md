@@ -21,7 +21,7 @@ Feel free to share feature ideas via [this form](https://github.com/cultfamily-o
 ### Assumptions & Approaches
 Solution approaches which can be explicitly described by a programmer in an appropriate amount of time shall be defined as algorithms.   
 
-Solution approaches which can not be explicitly described by a programmer in an appropriate amount of time shall be generated as a model leveraging AI -> machine learning -> deep learning leveraging neural nets.
+Solution approaches which can not be explicitly described by a programmer in an appropriate amount of time shall be generated as a model leveraging neural nets. This is when many people start talking about AI -> machine learning -> [deep learning](https://www.youtube.com/watch?v=7sB052Pz0sQ).
 
 This is why we use the model based approach for the Natural Language Processing Part e.g. for the [CULT Telegram Bot](https://t.me/cultmagazine_bot). 
 
