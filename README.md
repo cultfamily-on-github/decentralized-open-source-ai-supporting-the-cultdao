@@ -1,16 +1,32 @@
 # Cultmagazine For Telegram
 This repository is for the [CULT Mag News Bot](https://t.me/cultmagazine_bot).
 
-## Features 
-1. Send daily reminder about the [CULT Game of the Day](https://cultplayground.org)   
-2. Send info about new content in the [cultmagazine.org](https://cultmagazine.org)   
-3. ... please share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new)  
+If you would like to improve its knowledge and with that its skills, you might want to update its [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).
 
+## Features 
+1. Answer FAQs around the CULT according to the [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts)   
+2. Send daily reminder about the [CULT Game of the Day](https://cultplayground.org)   
+3. Send custom messages to inform subscribers around important news via the bot ui for manual updates  
+
+## Ideas
+Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
 
 ## Programming
-We use [this Deno Module](https://deno.land/x/telegram_bot_ui).
+Specific open source components we use for this are:   
+1. [telegram_chatbot](https://deno.land/x/telegram_chatbot)     
+2. [telegram_bot_ui](https://deno.land/x/telegram_bot_ui)  
+3. [node-nlp](https://www.npmjs.com/package/node-nlp)  
+4. [ts-node](https://www.npmjs.com/package/ts-node) (TypeScript is Javascript that scales)
 
 ### Start it Locally
+#### The telegram bot itself
+
+In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
+```sh
+ts-node src/node-nlp-server.ts 8081 
+```
+
+#### The Bot UI for the "send custom message feature"
 In the telegram-bot-ui folder execute:  
 
 ```sh
