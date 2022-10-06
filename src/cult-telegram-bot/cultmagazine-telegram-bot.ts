@@ -1,9 +1,8 @@
-import { Sender } from "./sender.ts"
-import { ISubscriber } from "./data-model.ts"
-import { PersistenceService } from "./persistence-service.ts"
+import { Sender } from "../helpers/sender.ts"
+import { ISubscriber, IMessage } from "../helpers/data-model.ts"
+import { PersistenceService } from "../helpers/persistence-service.ts"
 import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_chatbot/mod.ts"
-import { telegramBotToken } from '../.env.ts'
-import { IMessage } from "./data-model.ts"
+import { telegramBotToken } from '../../.env.ts'
 
 
 export class CultMagazineTelegramBot {
@@ -74,7 +73,13 @@ export class CultMagazineTelegramBot {
                 await this.persistenceService.writeSubscribers(subscribers)
             }
 
-            let text = await this.getAnswer(message.message.text)
+
+            let text
+            if (message.message.text === "/start") {
+                text = `Welcome Ser. I'm honored that you honor my service.`
+            } else {
+                text = await this.getAnswer(message.message.text)
+            }
             if (text === undefined || text === "") {
                 text = `The node nlp server seems unavailable atm. Please submit an issue here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new.`
             }

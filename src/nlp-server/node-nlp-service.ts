@@ -1,6 +1,7 @@
-import { trainingData } from "../training-data"
+import { trainingData } from "./training-data.ts"
 
-const { NlpManager } = require('node-nlp');
+import NlpManager from 'npm:node-nlp';
+// const { NlpManager } = require('npm:node-nlp');
 
 export class NodeNLPService {
 
@@ -21,7 +22,7 @@ export class NodeNLPService {
         this.brain = new NlpManager({ languages: ['en'], forceNER: true })
         this.trainBrain()
         this.startTrainBrainInterval()
-        
+
     }
 
     private trainBrain() {
