@@ -54,7 +54,9 @@ Specific open source components we use for this are:
 Execute the following command to start the CULT NLP Server serving via port 8081. 
 
 ```sh
+cd src/node-nlp-server
 npm i
+cd ../../
 ts-node ./src/start-cult-node-nlp-server.sh 8081 
 ```
 #### The CULT Magazine Bot Itself
@@ -83,7 +85,9 @@ You need to have [pm2](https://www.npmjs.com/package/pm2) installed (npm i -g pm
 In the node-nlp-server folder execute the following commands to start the CULT NLP Server serving via port 8081 
 
 ```sh
+cd src/node-nlp-server
 npm i
+cd ../../
 pm2 start ./src/start-cult-node-nlp-server.sh -- 8081
 ```
 

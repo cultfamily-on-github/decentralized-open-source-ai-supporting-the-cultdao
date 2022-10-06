@@ -43,9 +43,9 @@ export class NodeNLPService {
 
     }
 
-    public async getResponse(input: string): Promise<string> {
+    public async getResponse(input: string): Promise<any> {
 
-        let response = ""
+        let response: any
 
         if (this.readyToRock) {
 
@@ -53,7 +53,7 @@ export class NodeNLPService {
             return response
 
         } else {
-            response =
+            response.answer =
                 `You reached out to me while I was in training mode which normally takes less than a second. Please try again right now.`
         }
 
