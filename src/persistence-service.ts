@@ -1,4 +1,4 @@
-import { ISubscriber  } from "./data-model.ts";
+import { ISubscriber, IMessage  } from "./data-model.ts";
 // import { SortService, Direction } from "https://deno.land/x/sort@v1.1.1/mod.ts"
 
 export class PersistenceService {
@@ -14,7 +14,8 @@ export class PersistenceService {
 
     private pathToOperationalData = `${Deno.cwd()}/operational-data`;
     private pathToSubscribers = `${this.pathToOperationalData}/subscribers.json`;
-    private pathToReceivedMessages = `${this.pathToOperationalData}/receivedMessages.json`;
+    private pathToReceivedMessages = `${this.pathToOperationalData}/received-messages.json`;
+    private pathToSentMessages = `${this.pathToOperationalData}/sent-messages.json`;
 
     private constructor() {
     }
@@ -26,6 +27,24 @@ export class PersistenceService {
 
     public async writeSubscribers(subscribers: ISubscriber[]): Promise<void> {
         await Deno.writeTextFile(this.pathToSubscribers, JSON.stringify(subscribers))
+    }
+
+    public async readReceivedMessages(): Promise<IMessage[]> {
+        const messages: IMessage[] = JSON.parse(await Deno.readTextFile(this.pathToReceivedMessages))
+        return messages
+    }
+
+    public async writeReceivedMessages(receivedMessages: IMessage[]): Promise<void> {
+        await Deno.writeTextFile(this.pathToReceivedMessages, JSON.stringify(receivedMessages))
+    }
+
+    public async readSentMessages(): Promise<IMessage[]> {
+        const messages: IMessage[] = JSON.parse(await Deno.readTextFile(this.pathToSentMessages))
+        return messages
+    }
+
+    public async writeSentMessages(subscribers: IMessage[]): Promise<void> {
+        await Deno.writeTextFile(this.pathToSentMessages, JSON.stringify(subscribers))
     }
 
 }

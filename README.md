@@ -57,7 +57,7 @@ ts-node src/node-nlp-server.ts 8081
 
 In the main project folder execute the following command to start the CULT Magazine Bot.    
 ```sh
-deno run --allow-read --allow-net --allow-env src/start.ts
+deno run --allow-read --allow-net --allow-env --allow-write src/start.ts
 ```
 
 #### The Bot UI for the "send custom message feature"
@@ -88,9 +88,9 @@ ufw allow 8081/tcp
 
 #### The telegram bot itself
 
-In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081    
+In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
 ```sh
-./start-server.sh
+pm2 start src/start.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net --allow-write"
 ```
 
 #### The Bot UI for the "send custom message feature"
