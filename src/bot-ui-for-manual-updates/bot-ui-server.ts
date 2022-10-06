@@ -6,8 +6,7 @@ import { ChatHandler } from "./chat-handler.ts";
 
 export class UIServer {
 
-    private static pathToSendMessageUIHTML = `${Deno.cwd()}/send-message-ui.html`
-    private static pathToChatHandlingUIHTML = `${Deno.cwd()}/chat-handling-ui.html`
+    private static pathToSendMessageUIHTML = `${Deno.cwd()}/src/bot-ui-for-manual-updates/send-message-ui.html`
     private static counterOfFailingTrials = 0
 
     private static sender: Sender = new Sender()
@@ -23,23 +22,16 @@ export class UIServer {
                 res.send(html);
         });
 
-        app.get('/chatHandling', this.authorizationMiddleware, async (req: any, res: any) => {
-                const html = (await Persistence.readFromLocalFile(UIServer.pathToChatHandlingUIHTML))
-                    .replace('secret', req.query.apiKey)
-                    .replace('theFancyBaseURL', baseURL)
-                res.send(html);
-        });
-
         app.get('/sendMessage/chatId/:chatId/textMessage/:textMessage', this.authorizationMiddleware, async (req: any, res: any) => {
                 console.log(`sending message ${req.params.textMessage} to chat id ${req.params.chatId}`)
                 await UIServer.sender.send(telegramBotToken, req.params.chatId, req.params.textMessage)
                 res.send('sent successfully');
         });
 
-        app.get('/exportChatInviteLink/chatId/:chatId', this.authorizationMiddleware, async (req: any, res: any) => {
-                const result =  await ChatHandler.exportChatInviteLink(telegramBotToken, req.params.chatId)
-                res.send(result);
-        });
+        // app.get('/exportChatInviteLink/chatId/:chatId', this.authorizationMiddleware, async (req: any, res: any) => {
+        //         const result =  await ChatHandler.exportChatInviteLink(telegramBotToken, req.params.chatId)
+        //         res.send(result);
+        // });
 
         if (port.toString().includes('443')) {
             const httpsOptions = {

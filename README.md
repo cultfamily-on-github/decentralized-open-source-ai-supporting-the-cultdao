@@ -55,7 +55,7 @@ Execute the following command to start the CULT NLP Server serving via port 8081
 
 ```sh
 npm i
-ts-node src/node-nlp-server.ts 8081 
+ts-node ./src/start-cult-node-nlp-server.sh 8081 
 ```
 #### The CULT Magazine Bot Itself
 
@@ -68,7 +68,7 @@ deno run --allow-read --allow-net --allow-env --allow-write src/start-cult-teleg
 In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
-deno run --allow-read --allow-net --allow-env --unstable src/start-ui-server-for-manual-updates.ts 8085
+deno run --allow-read --allow-net --allow-env --unstable src/start-ui-server-for-manual-updates.ts 8042
 ```
 
 #### The Admin Server (incl. Sentiment Analyzer)
@@ -106,7 +106,7 @@ pm2 start src/start-cult-telegram-bot.ts --interpreter="deno" --interpreter-args
 In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
-pm2 start src/start-ui-server-for-manual-updates.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --unstable" -- 8085
+pm2 start src/start-ui-server-for-manual-updates.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --unstable" -- 8042
 ```
 
 #### The Admin Server (incl. Sentiment Analyzer)
