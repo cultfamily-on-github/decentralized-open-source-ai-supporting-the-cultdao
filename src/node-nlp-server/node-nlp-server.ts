@@ -37,18 +37,7 @@ export class CULTNodeNLPServer {
             const result: any = await this.nodeNLPService.getResponse(request.params.input)
             if (result.answer === "" || result.answer === undefined) {
                 const pleaseHelpMeLearnMessage =
-                    "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/node-nlp-server/training-data.ts"
-                response.send({ answer: pleaseHelpMeLearnMessage });
-            } else {
-                response.send({ answer: result.answer });
-            }
-        });
-
-        this.app.get("/getsubscribers/adminkey/:adminkey", async (request: any, response: any) => {
-            const result: any = await this.nodeNLPService.getResponse(request.params.input)
-            if (result.answer === "" || result.answer === undefined) {
-                const pleaseHelpMeLearnMessage =
-                    "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/node-nlp-server/training-data.ts"
+                    "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts"
                 response.send({ answer: pleaseHelpMeLearnMessage });
             } else {
                 response.send({ answer: result.answer });
