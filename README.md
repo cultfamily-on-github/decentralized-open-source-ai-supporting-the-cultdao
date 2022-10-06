@@ -28,7 +28,9 @@ This is why we use the model based approach for the Natural Language Processing 
 The explicit algorithm approach would be very time consuming for programmers resp. for [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts) maintainers when compared to the model based approach because by using the model based approach we make sure that the [CULT Telegram Bot](https://t.me/cultmagazine_bot) can easily tolerate typos and unusual wording in general.
 
 ### Learning Opportunities
-If people are interested in contributing to this repository, they can explore, differentiate and apply [deep learning](https://www.youtube.com/watch?v=7sB052Pz0sQ) / reinforcement learning / supervised and unsupervised learning in order to improve assets like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).   
+If people are interested in contributing to this repository, they can explore, differentiate and reasonably combine [deep learning](https://www.youtube.com/watch?v=7sB052Pz0sQ) / reinforcement learning / supervised and unsupervised learning in order to improve assets like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).   
+
+In the specific context of Natural Language Processing (NLP) people can explore, differentiate and reasonably combine Natural Language Understanding (NLU) and Natural Language Generation (NLG). In the NLU context it might be interesting to continuously improve the intent matching and entity extraction as an open source contribution to [node-nlp](https://github.com/axa-group/nlp.js#readme). 
 
 For people who like learning with flash cards the [fancy flash cards web app](https://github.com/cultfamily-on-github/fancy-flash-cards/blob/master/README.md) might be cool.
 

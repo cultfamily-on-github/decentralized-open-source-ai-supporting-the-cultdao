@@ -9,7 +9,18 @@ app.get("/getresponse/input/:input", async (request: any, response: any) => {
     const result: any = await nodeNLPService.getResponse(request.params.input)
     if (result.answer === "" || result.answer === undefined) {
         const pleaseHelpMeLearnMessage =
-            "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data."
+            "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/node-nlp-server/training-data.ts"
+        response.send({answer: pleaseHelpMeLearnMessage});
+    } else {
+        response.send({answer: result.answer});
+    }
+});
+
+app.get("/getsubscribers/adminkey/:adminkey", async (request: any, response: any) => {
+    const result: any = await nodeNLPService.getResponse(request.params.input)
+    if (result.answer === "" || result.answer === undefined) {
+        const pleaseHelpMeLearnMessage =
+            "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/node-nlp-server/training-data.ts"
         response.send({answer: pleaseHelpMeLearnMessage});
     } else {
         response.send({answer: result.answer});
