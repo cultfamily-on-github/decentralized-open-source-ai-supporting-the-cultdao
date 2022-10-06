@@ -31,15 +31,26 @@ export class CultMagazineTelegramBot {
 
         this.telegramBot.on(UpdateType.Message, async (message: any) => {
 
-            const text = message.message.text || "I can't hear you";
+            const text = await this.getAnswer(message.message.text)
 
-            await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, text: `echo ${text}` })
+            await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, text })
 
         });
 
         this.telegramBot.run({
             polling: true,
         });
+
+    }
+
+    public async getAnswer(input: string): Promise<string> {
+
+        const url = `http://116.203.185.185:8081/getresponse/input/${input}`
+
+        const response = await fetch(url)
+        const result = await response.json()
+        
+        return result.answer
 
     }
 
