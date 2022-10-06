@@ -43,6 +43,11 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "what is Revolt 2 earn",
+            intent: "getBasicInfo.Revolt2Earn"
+        },
+        {
+            language: "en",
             utterance: "I want to understand RVLT",
             intent: "getBasicInfo.RVLT"
         },    
@@ -228,6 +233,16 @@ export const trainingData =
             language: "en",
             intent: "getBasicInfo.CULTDAO",
             answer: "I get this request a frequently. The CULTDAO is a Decentralized Autonomous Organization (DAO), which supports those who support decentralization. \nYou can regard a DAO as a better version of a classic shareholder company. In a DAO it's actually the shareholders who have the power. \n\nDAOs like the CULTDAO ensure there is no ground for corrupt politicians. \n\nFeel free to explore architectures of freedom via https://cultmagazine.org."
+        },
+        {
+            language: "en",
+            intent: "getBasicInfo.CULTDAO",
+            answer: "I guess the following video will be valuable for you: https://rumble.com/v1lf51r-cultdao-in-100-seconds-michael-saylor-talks-about-cult.html"
+        },
+        {
+            language: "en",
+            intent: "getBasicInfo.Revolt2Earn",
+            answer: "I guess this video will be valuable for you: https://rumble.com/v1lf3yb-revolt-2-earn-in-100-seconds-michael-saylor-talks-about-revolt-2-earn.html"
         },
         {
             language: "en",
