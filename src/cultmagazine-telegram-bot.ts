@@ -25,8 +25,8 @@ export class CultMagazineTelegramBot {
 
     private constructor() {
         this.sender = Sender.getInstance()
-        this.nlpServerURL = `http://116.203.185.185:8081`
-        // this.nlpServerURL = `http://localhost:8081`
+        // this.nlpServerURL = `http://116.203.185.185:8081`
+        this.nlpServerURL = `http://localhost:8081`
 
 
         this.persistenceService = new PersistenceService()
