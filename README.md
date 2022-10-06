@@ -10,7 +10,11 @@ The content of this repository enables things like the [CULT Telegram Bot](https
 4. Provide AI related education to ensure that - if AI is used - the best AI is used to strengthen freedom, fairness and love 
 
 ## Training Data
-If people would like to improve the skills of the [CULT Telegram Bot](https://t.me/cultmagazine_bot), they might want to update the corresponding [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).
+If people would like to improve the skills of the [CULT Telegram Bot](https://t.me/cultmagazine_bot), they might want to update the corresponding [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).  
+  
+The [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts) of the [CULT Telegram Bot](https://t.me/cultmagazine_bot) mainly consists of a mapping from
+1. utterances to intents   
+2. intents to potential answers which the bot gives to the one who is asking for it  
 
 ## Ideas
 Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
