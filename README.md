@@ -38,13 +38,29 @@ deno run --allow-read --allow-net --allow-env src/start.ts
 ```
 
 #### The Bot UI for the "send custom message feature"
-In the telegram-bot-ui folder execute:  
+In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
 deno run --allow-read --allow-net --allow-env bot-ui-server.ts
 ```
 
 ### Start it in Production
+#### The Node NLP Server
+
+In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081 
+
+```sh
+ts-node src/node-nlp-server.ts 8081 
+```
+
+###### Advanced Considerations
+If you run the node nlp server on a different machine than the telegram bot itself, you might open port 8081 for tcp.  
+For this scenario, you might want to add rate limiting via apikeys etc. 
+
+```sh 
+ufw allow 8081/tcp
+```
+
 #### The telegram bot itself
 
 In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081    
@@ -53,7 +69,7 @@ In the node-nlp-server folder execute the following command to start the CULT NL
 ```
 
 #### The Bot UI for the "send custom message feature"
-In the telegram-bot-ui folder execute:  
+In the bot-ui-for-manual-updates folder execute:  
 
 ```sh
 pm2 start bot-ui-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net" -- 8443

@@ -9,7 +9,7 @@ app.get("/getresponse/input/:input", async (request: any, response: any) => {
     if (result.answer === "") {
         const pleaseHelpMeLearnMessage =
             "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data."
-        response.send(result.answer);
+        response.send(pleaseHelpMeLearnMessage);
     } else {
         response.send(result.answer);
     }
