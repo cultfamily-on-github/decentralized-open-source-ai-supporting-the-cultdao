@@ -129,12 +129,14 @@ After I have received rewards and great feedback for the https://cultmagazine.or
 
 This time I programmed a decentralized open source AI supporting the CULTDAO. You can chat with this AI via telegram. Its telegram username is cultmagazine_bot. The direct link to it is: https://t.me/cultmagazine_bot. 
 
-Everyone is invited to update its [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts). I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
+Everyone is invited to update its [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts) which is why I already call it decentralized. On-Chain Solutions for things like that seem not ready yet. I'm happy if anyone opens a pull request one day which allows us to replace my backend server by an On-Chain Solution. I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
 
 Feedback is always welcome.
 
+I have added the cycle keyword Stream in some of the latest commit messages see: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/commits/main
+
 ### Evidence Link
-[https://github.com/cultfamily-on-github/cultmagazine-for-telegram/commits/main](https://t.me/cultmagazine_bot)
+https://t.me/cultmagazine_bot
 
 ### Worth
 0.5 WETH
