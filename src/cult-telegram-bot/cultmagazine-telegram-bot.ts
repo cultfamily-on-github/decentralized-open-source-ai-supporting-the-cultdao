@@ -76,7 +76,7 @@ export class CultMagazineTelegramBot {
 
             let text
             if (message.message.text === "/start") {
-                text = `Welcome Ser. I'm honored that you honor my service.`
+                text = `Welcome Ser. I'm honored that you honor my service. What can I do for you?`
             } else {
                 text = await this.getAnswer(message.message.text)
             }

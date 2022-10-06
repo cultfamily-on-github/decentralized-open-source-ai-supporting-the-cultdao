@@ -84,7 +84,7 @@ In the node-nlp-server folder execute the following commands to start the CULT N
 
 ```sh
 npm i
-pm2 start ./cult-node-nlp-server.sh -- 8081
+pm2 start ./src/start-cult-node-nlp-server.sh -- 8081
 ```
 
 ###### Advanced Considerations
