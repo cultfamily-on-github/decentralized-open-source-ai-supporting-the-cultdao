@@ -116,7 +116,11 @@ pm2 start src/start-admin-server.ts --interpreter="deno" --interpreter-args="run
 ```
 
 ## Manual on How to Monetize Such Contributions
+Explore how [Revolt 2 Earn](https://rumble.com/v1lf3yb-revolt-2-earn-in-100-seconds-michael-saylor-talks-about-revolt-2-earn.html) works.  
+
 Submit an [act of revolt](https://revolt.cultdao.io/submitProposal). 
+
+You can regard the following as an example:
 
 ### Name
 I have programmed a decentralized open source AI supporting the CULTDAO
@@ -145,9 +149,12 @@ https://t.me/cultmagazine_bot
 0x9E972a43B3B8D68cD70930697E16429E47E88151
 
 ### Transaction of this Proposal
-
+https://polygonscan.com/tx/0x616fad2a885e5257697c555ff072ca39c03aad542b56e2a785dc44a9ffe00445 
 
 ### Act of Revolt ID
-
+1070
 
 ### Transaction of Reward
+Proposal Pending - see [pending proposals](https://revolt.cultdao.io/pendingProposal)  
+
+
