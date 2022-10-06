@@ -19,8 +19,23 @@ The [training data](https://github.com/cultfamily-on-github/cultmagazine-for-tel
 ## Ideas
 Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
 
+## Models & Algorithms
+### Assumptions & Approaches
+Solution approaches which can be explicitly described by a programmer in an appropriate amount of time shall be defined as algorithms.   
+
+Solution approaches which can not be explicitly described by a programmer in an appropriate amount of time shall be generated as a model leveraging AI / machine learning / deep learning / neural nets.
+
+This is why we use the model based approach for the Natural Language Processing Part e.g. for the [CULT Telegram Bot](https://t.me/cultmagazine_bot). 
+
+The explicit algorithm approach would be very time consuming for programmers resp. for [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts) maintainers when compared to the model based approach because by using the model based approach we make sure that the [CULT Telegram Bot](https://t.me/cultmagazine_bot) can easily tolerate typos and unusual wording in general.
+
+### Learning Opportunities
+If people are interested in contributing to this repository, they can explore, differentiate and apply [deep learning](https://www.youtube.com/watch?v=7sB052Pz0sQ) / reinforcement learning / supervised and unsupervised learning in order to improve assets like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).   
+
+For people who like learning with flash cards the [fancy flash cards web app](https://github.com/cultfamily-on-github/fancy-flash-cards/blob/master/README.md) might be cool.
+
 ## Programming
-To ensure people can easily reuse the assets we bring to the table, we ensure there is clear separation of concerns, high cohesion and loose coupling in our microservices architecture. Improvement proposals via [Pull Requests](https://www.youtube.com/watch?v=8lGpZkjnkt4) are welcome.  
+To ensure people can easily reuse the assets we bring to the table, we foster clear separation of concerns, high cohesion and loose coupling in our microservices architecture. Improvement proposals via [Pull Requests](https://www.youtube.com/watch?v=8lGpZkjnkt4) are welcome.  
 
 ### We love Open Source Programmers
 
