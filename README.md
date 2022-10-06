@@ -69,6 +69,11 @@ In the bot-ui-for-manual-updates folder execute:
 deno run --allow-read --allow-net --allow-env bot-ui-server.ts
 ```
 
+#### The Admin Server (incl. Sentiment Analyzer)
+```sh 
+deno run --allow-read --allow-net --allow-env --allow-write --unstable src/start-admin-server.ts 3001
+```
+
 ### Start it in Production
 #### The Node NLP Server
 You need to have [pm2](https://www.npmjs.com/package/pm2) installed (npm i -g pm2).
@@ -100,6 +105,12 @@ In the bot-ui-for-manual-updates folder execute:
 
 ```sh
 pm2 start bot-ui-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net" -- 8443
+```
+
+#### The Admin Server (incl. Sentiment Analyzer)
+```sh 
+pm2 start src/start-admin-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --allow-write --unstable" -- 8055
+
 ```
 
 ## Manual on How to Monetize Such Contributions
