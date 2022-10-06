@@ -4,15 +4,15 @@ The goal of this repo is to leverage AI technology to support the [CULTDAO](http
 The content of this repository enables things like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).
 
 ## Features 
-1. Answer FAQs around the CULT according to the [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts)   
+1. Answer FAQs around the CULT according to the [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts)  
 2. Send daily reminders - e.g. about the [CULT Game of the Day](https://cultplayground.org)   
 3. Send custom messages to inform subscribers around important news via the bot ui for manual updates    
 4. Provide AI related education to ensure that - if AI is used - the best AI is used to strengthen freedom, fairness and love 
 
 ## Training Data
-If people would like to improve the skills of the [CULT Telegram Bot](https://t.me/cultmagazine_bot), they might want to update the corresponding [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts).  
+If people would like to improve the skills of the [CULT Telegram Bot](https://t.me/cultmagazine_bot), they might want to update the corresponding [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts).  
   
-The [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts) of the [CULT Telegram Bot](https://t.me/cultmagazine_bot) mainly consists of mappings from utterances to intents and from intents to potential answers, which the bot gives to the one who is asking for it.  
+The [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts) of the [CULT Telegram Bot](https://t.me/cultmagazine_bot) mainly consists of mappings from utterances to intents and from intents to potential answers, which the bot gives to the one who is asking for it.  
 
 ## Ideas
 Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
@@ -25,7 +25,7 @@ Solution approaches which can not be explicitly described by a programmer in an 
 
 This is why we use the model based approach for the Natural Language Processing Part e.g. for the [CULT Telegram Bot](https://t.me/cultmagazine_bot). 
 
-The explicit algorithm approach would be very time consuming for programmers resp. for [training data](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/blob/main/node-nlp-server/training-data.ts) maintainers when compared to the model based approach because by using the model based approach we make sure that the [CULT Telegram Bot](https://t.me/cultmagazine_bot) can easily tolerate typos and unusual wording in general.
+The explicit algorithm approach would be very time consuming for programmers resp. for [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts) maintainers when compared to the model based approach because by using the model based approach we make sure that the [CULT Telegram Bot](https://t.me/cultmagazine_bot) can easily tolerate typos and unusual wording in general.
 
 ### Learning Opportunities
 If people are interested in contributing to this repository, they can explore, differentiate and reasonably combine [deep learning](https://www.youtube.com/watch?v=7sB052Pz0sQ) / reinforcement learning / supervised and unsupervised learning in order to improve assets like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).   
@@ -119,21 +119,25 @@ pm2 start src/start-admin-server.ts --interpreter="deno" --interpreter-args="run
 Submit an [act of revolt](https://revolt.cultdao.io/submitProposal). 
 
 ### Name
-I have programmed a News Bot for the CULT Mag
+I have programmed a decentralized open source AI supporting the CULTDAO
 
 ### Handle
 https://twitter.com/Peer2peerE
 
 ### Description
-The [News Bot](https://t.me/cultmagazine_bot) ... 
+After I have received rewards and great feedback for the https://cultmagazine.org and for the https://cultplayground.org, I'm excited and motivated to program further bold ecosystem features. 
 
-Everyone is invited to support the emergence of manifold architectures of freedom by contributing to the code which can be found here: https://github.com/cultfamily-on-github ... I added the cycle keyword in some commitmessages - see evidencelink.
+This time I programmed a decentralized open source AI supporting the CULTDAO. You can chat with this AI via telegram. Its telegram username is cultmagazine_bot. The direct link to it is: https://t.me/cultmagazine_bot. 
+
+Everyone is invited to update its [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts). I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
+
+Feedback is always welcome.
 
 ### Evidence Link
-https://github.com/cultfamily-on-github/cultmagazine-for-telegram/commits/main
+[https://github.com/cultfamily-on-github/cultmagazine-for-telegram/commits/main](https://t.me/cultmagazine_bot)
 
 ### Worth
-0.25 WETH
+0.5 WETH
 
 ### Wallet
 0x9E972a43B3B8D68cD70930697E16429E47E88151
