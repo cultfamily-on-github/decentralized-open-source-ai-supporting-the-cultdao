@@ -98,6 +98,31 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "Hi",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
+            utterance: "Hey",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
+            utterance: "Salut",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
+            utterance: "Grüezi",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
+            utterance: "Bonjour",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
             utterance: "how do you feel",
             intent: "basicconversation.howareyou"
         },
