@@ -32,6 +32,8 @@ If people are interested in contributing to this repository, they can explore, d
 
 In the specific context of Natural Language Processing (NLP) people can explore, differentiate and reasonably combine Natural Language Understanding (NLU) and Natural Language Generation (NLG). In the NLU context it might be interesting to continuously improve the intent matching and entity extraction as an open source contribution to [node-nlp](https://github.com/axa-group/nlp.js#readme). 
 
+This repository might evolve so that it allows to leverage [convolutional neural networks](https://www.youtube.com/watch?v=QzY57FaENXg) and [recurrent neural networks](https://www.youtube.com/watch?v=AsNTP8Kwu80) for many further use cases e.g. in the context of for trading volume predictions which might be valuable to predict the value within the CULT & RVLT treasury at a certain point in the future. Additionally such approaches might professionalize decentralized long term investment strategies optimizing e.g. the bollinger bands based approach [drafted here](https://github.com/cultfamily-on-github/cult-bollinger-bands-based-investment-smart-contract). 
+
 For people who like learning with flash cards the [fancy flash cards web app](https://github.com/cultfamily-on-github/fancy-flash-cards/blob/master/README.md) might be cool.
 
 ## Programming
