@@ -49,7 +49,7 @@ Specific open source components we use for this are:
  
 #### The Node NLP Server
 
-In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081. 
+Execute the following command to start the CULT NLP Server serving via port 8081. 
 
 ```sh
 npm i
@@ -59,7 +59,7 @@ ts-node src/node-nlp-server.ts 8081
 
 In the main project folder execute the following command to start the CULT Magazine Bot.    
 ```sh
-deno run --allow-read --allow-net --allow-env --allow-write src/cult-telegram-bot.ts
+deno run --allow-read --allow-net --allow-env --allow-write src/start-cult-telegram-bot.ts
 ```
 
 #### The Bot UI for the "send custom message feature"
@@ -92,7 +92,7 @@ ufw allow 8081/tcp
 
 In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
 ```sh
-pm2 start src/cult-telegram-bot.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net --allow-write"
+pm2 start src/start-cult-telegram-bot.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net --allow-write"
 ```
 
 #### The Bot UI for the "send custom message feature"

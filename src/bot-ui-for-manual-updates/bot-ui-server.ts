@@ -1,6 +1,6 @@
 import { opine } from "https://deno.land/x/opine@2.3.3/mod.ts";
 import { Persistence } from "https://deno.land/x/persistence/persistence.ts"
-import { Sender } from "./sender.ts"
+import { Sender } from "../helpers/sender.ts";
 import { port, telegramBotToken, pathToCert, pathToCertKey, apiKey, baseURL } from './.env.ts'
 import { ChatHandler } from "./chat-handler.ts";
 
@@ -72,6 +72,4 @@ export class UIServer {
         }, 1000 * 60 * 60)
     }
 }
-
-UIServer.serve()
 
