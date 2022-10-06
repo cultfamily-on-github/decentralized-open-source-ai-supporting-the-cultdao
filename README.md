@@ -12,6 +12,10 @@ If you would like to improve its knowledge and with that its skills, you might w
 Feel free to share feature ideas via [this form](https://github.com/cultfamily-on-github/cultmagazine-for-telegram/issues/new).  
 
 ## Programming
+To ensure people can easily reuse the assets we bring to the table, we ensure there is clear separation of concerns, high cohesion and loose coupling in our microservices architecture. Improvement proposals via [Pull Requests](https://www.youtube.com/watch?v=8lGpZkjnkt4) are welcome.  
+
+### We love Open Source Programmers
+
 Specific open source components we use for this are:   
 1. [telegram_chatbot](https://deno.land/x/telegram_chatbot)     
 2. [telegram_bot_ui](https://deno.land/x/telegram_bot_ui)  
@@ -19,11 +23,18 @@ Specific open source components we use for this are:
 4. [ts-node](https://www.npmjs.com/package/ts-node) (TypeScript is Javascript that scales)
 
 ### Start it Locally
-#### The telegram bot itself
+ 
+#### The Node NLP Server
 
-In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
+In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081    
 ```sh
 ts-node src/node-nlp-server.ts 8081 
+```
+#### The CULT Magazine Bot Itself
+
+In the main project folder execute the following command to start the CULT Magazine Bot.    
+```sh
+deno run --allow-read --allow-net --allow-env src/start.ts
 ```
 
 #### The Bot UI for the "send custom message feature"
@@ -31,6 +42,21 @@ In the telegram-bot-ui folder execute:
 
 ```sh
 deno run --allow-read --allow-net --allow-env bot-ui-server.ts
+```
+
+### Start it in Production
+#### The telegram bot itself
+
+In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081    
+```sh
+./start-server.sh
+```
+
+#### The Bot UI for the "send custom message feature"
+In the telegram-bot-ui folder execute:  
+
+```sh
+pm2 start bot-ui-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net" -- 8443
 ```
 
 ## Manual on How to Monetize Such Contributions
