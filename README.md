@@ -47,7 +47,10 @@ Specific open source components we use for this are:
  
 #### The Node NLP Server
 
-In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081    
+You need to have [ts-node](https://www.npmjs.com/package/ts-node) installed.
+
+In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081. 
+
 ```sh
 ts-node src/node-nlp-server.ts 8081 
 ```
@@ -67,11 +70,12 @@ deno run --allow-read --allow-net --allow-env bot-ui-server.ts
 
 ### Start it in Production
 #### The Node NLP Server
+You need to have [ts-node](https://www.npmjs.com/package/ts-node) and [pm2](https://www.npmjs.com/package/pm2) installed.
 
 In the node-nlp-server folder execute the following command to start the CULT NLP Server serving via port 8081 
 
 ```sh
-ts-node src/node-nlp-server.ts 8081 
+./start-server.sh 8081
 ```
 
 ###### Advanced Considerations
