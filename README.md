@@ -57,7 +57,7 @@ Execute the following command to start the CULT NLP Server serving via port 8081
 cd src/node-nlp-server
 npm i
 cd ../../
-ts-node ./src/start-cult-node-nlp-server.sh 8081 
+./src/start-cult-node-nlp-server.sh 8081 
 ```
 #### The CULT Magazine Bot Itself
 
