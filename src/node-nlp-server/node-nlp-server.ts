@@ -36,7 +36,7 @@ export class CULTNodeNLPServer {
         this.app.get("/getresponse/input/:input", async (request: any, response: any) => {
             const result: any = await this.nodeNLPService.getResponse(request.params.input)
             if (result.answer === "" || result.answer === undefined) {
-                console.log(result) // check this when accurracy seems strang
+                console.log(result) // check this when accurracy seems strange
                 const pleaseHelpMeLearnMessage =
                     "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts"
                 response.send({ answer: pleaseHelpMeLearnMessage });

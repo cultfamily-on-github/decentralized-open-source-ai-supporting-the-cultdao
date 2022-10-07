@@ -225,10 +225,90 @@ export const trainingData =
             language: "en",
             utterance: "which music do you like",
             intent: "explorationof.favoritemusic"
+        },
+        {
+            language: "en",
+            utterance: "How to buy Crypto",
+            intent: "explorationof.buyingCrypto"
+        },
+        {
+            language: "en",
+            utterance: "How to buy CULT",
+            intent: "explorationof.buyingCULT"
+        },
+        {
+            language: "en",
+            utterance: "How to buy RVLT",
+            intent: "explorationof.buyingRVLT"
+        },
+        {
+            language: "en",
+            utterance: "How to bridge Ether to Polygon",
+            intent: "explorationof.bridgeEtherToPolygon"
+        },
+        {
+            language: "en",
+            utterance: "Where can I buy Crypto",
+            intent: "explorationof.buyingCrypto"
+        },
+        {
+            language: "en",
+            utterance: "Where can I buy CULT",
+            intent: "explorationof.buyingCULT"
+        },
+        {
+            language: "en",
+            utterance: "Where can I buy RVLT",
+            intent: "explorationof.buyingRVLT"
+        },
+        {
+            language: "en",
+            utterance: "How can I transfer Ether to Polygon",
+            intent: "explorationof.bridgeEtherToPolygon"
+        },
+        {
+            language: "en",
+            utterance: "buy Crypto",
+            intent: "explorationof.buyingCrypto"
+        },
+        {
+            language: "en",
+            utterance: "buy CULT",
+            intent: "explorationof.buyingCULT"
+        },
+        {
+            language: "en",
+            utterance: "buy RVLT",
+            intent: "explorationof.buyingRVLT"
+        },
+        {
+            language: "en",
+            utterance: "How can one send Ether to Polygon",
+            intent: "explorationof.bridgeEtherToPolygon"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "explorationof.buyingCULT",
+            answer: "If you have Ether, go to https://uniswap.org, ensure your browserwallet (e.g. metamask.io) is connected to the Ethereum Mainnet and buy CULT (Smart Contract Address 0xf0f9d895aca5c8678f706fb8216fa22957685a13). \n\n If you do not have Ether yet ask me how to buy crypto."
+        },
+        {
+            language: "en",
+            intent: "explorationof.bridgeEtherToPolygon",
+            answer: "https://consensys.net/blog/metamask/how-to-bridge-tokens-from-ethereum-to-polygon-with-metamask"
+        },
+        {
+            language: "en",
+            intent: "explorationof.buyingRVLT",
+            answer: "If you have e.g. Ether already on the polygon chain, you can use https://quickswap.exchange/#/swap to buy RVLT (Smart Contract Address 0xf0f9d895aca5c8678f706fb8216fa22957685a13)."
+        },
+        {
+            language: "en",
+            intent: "explorationof.buyingCrypto",
+            answer: "Give your public wallet address to your neighbor. Also give him Fiat shit and ask him to give you CULT and RVLT. If your neighbor does not have CULT or RVLT yet, kick his ass."
+        },
         {
             language: "en",
             intent: "getBasicInfo.CULT",
