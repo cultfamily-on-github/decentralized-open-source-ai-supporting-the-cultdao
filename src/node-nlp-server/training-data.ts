@@ -38,6 +38,16 @@ export const trainingData =
         },    
         {
             language: "en",
+            utterance: "What is Revolt",
+            intent: "getBasicInfo.RVLT"
+        },    
+        {
+            language: "en",
+            utterance: "What is rvlt",
+            intent: "getBasicInfo.RVLT"
+        },    
+        {
+            language: "en",
             utterance: "Tell me something about RVLT",
             intent: "getBasicInfo.RVLT"
         },
