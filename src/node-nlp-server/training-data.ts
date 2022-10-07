@@ -312,7 +312,7 @@ export const trainingData =
         {
             language: "en",
             intent: "basicconversation.browseLearningOpportunities",
-            answer: "I have received the following inputs which I do understand properly yet: \n\nplaceholderLearningOpportunities"
+            answer: "My programmer prepared me for supervised learning. Please be my supervisor. I have collected my learning opportunities on https://cultplayground.org. Please click the CULT Beast Learning Opportunities button there to be my supervisor."
         },
         {
             language: "en",

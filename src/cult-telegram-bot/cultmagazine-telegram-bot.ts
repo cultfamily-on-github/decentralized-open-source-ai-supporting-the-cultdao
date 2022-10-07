@@ -92,9 +92,8 @@ export class CultMagazineTelegramBot {
             }
             if (text === undefined || text === "") {
                 text = `The node nlp server seems unavailable atm. Please submit an issue here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new.`
-            } else if (text === "I have received the following inputs which I do understand properly yet: \n\nplaceholderLearningOpportunities") {
-                text = text.replace("placeholderLearningOpportunities", "http://116.203.185.185:8081/listLearningOpportunities \n\nThere will be a fancy maintenance UI for that soon.")
-            }
+            } 
+            
             await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, text })
 
             const sentMessages: IMessage[] = await this.persistenceService.readSentMessages()
