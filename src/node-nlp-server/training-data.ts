@@ -48,6 +48,11 @@ export const trainingData =
         },    
         {
             language: "en",
+            utterance: "rvlt",
+            intent: "getBasicInfo.RVLT"
+        },    
+        {
+            language: "en",
             utterance: "Tell me something about RVLT",
             intent: "getBasicInfo.RVLT"
         },
