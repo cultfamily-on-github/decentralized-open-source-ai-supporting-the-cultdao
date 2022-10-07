@@ -1,6 +1,7 @@
 import { PersistenceService } from "../helpers/persistence-service.ts"
 import { ILearningOpportunity } from "../helpers/data-model.ts"
 import express from "npm:express";
+import cors from "npm:cors";
 
 export class SupervisedLearningServer {
 
@@ -20,6 +21,7 @@ export class SupervisedLearningServer {
 
     private constructor(port: Number) {
         this.app = express();
+        this.app.use(cors())
         this.port = port
         this.persistencService = PersistenceService.getInstance()
     }
