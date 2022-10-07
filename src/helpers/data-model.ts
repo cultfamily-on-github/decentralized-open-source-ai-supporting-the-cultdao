@@ -8,3 +8,8 @@ export interface IMessage{
     date: number,
     text: string
 }
+
+export interface ILearningOpportunity {
+    input: string,
+    receivedOn: string
+}

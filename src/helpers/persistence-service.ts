@@ -1,4 +1,4 @@
-import { ISubscriber, IMessage  } from "./data-model.ts";
+import { ISubscriber, IMessage, ILearningOpportunity  } from "./data-model.ts";
 // import { SortService, Direction } from "https://deno.land/x/sort@v1.1.1/mod.ts"
 
 export class PersistenceService {
@@ -16,6 +16,7 @@ export class PersistenceService {
     private pathToSubscribers = `${this.pathToOperationalData}/subscribers.json`;
     private pathToReceivedMessages = `${this.pathToOperationalData}/received-messages.json`;
     private pathToSentMessages = `${this.pathToOperationalData}/sent-messages.json`;
+    private pathToLearningOpportunities = `${this.pathToOperationalData}/learning-opportunities.json`;
 
     private constructor() {
     }
@@ -45,6 +46,15 @@ export class PersistenceService {
 
     public async writeSentMessages(subscribers: IMessage[]): Promise<void> {
         await Deno.writeTextFile(this.pathToSentMessages, JSON.stringify(subscribers))
+    }
+
+    public async readLearningOpportunities(): Promise<ILearningOpportunity[]> {
+        const learningOpportunities: ILearningOpportunity[] = JSON.parse(await Deno.readTextFile(this.pathToLearningOpportunities))
+        return learningOpportunities
+    }
+
+    public async writeLearningOpportunities(learningOpportunities: ILearningOpportunity[]): Promise<void> {
+        await Deno.writeTextFile(this.pathToLearningOpportunities, JSON.stringify(learningOpportunities))
     }
 
 }

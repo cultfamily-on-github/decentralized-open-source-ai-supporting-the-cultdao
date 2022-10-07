@@ -285,10 +285,35 @@ export const trainingData =
             language: "en",
             utterance: "How can one send Ether to Polygon",
             intent: "explorationof.bridgeEtherToPolygon"
+        },
+        {
+            language: "en",
+            utterance: "Which questions did you receive, which you could not answer properly?",
+            intent: "basicconversation.browseLearningOpportunities"
+        },
+        {
+            language: "en",
+            utterance: "unknown questions",
+            intent: "basicconversation.browseLearningOpportunities"
+        },
+        {
+            language: "en",
+            utterance: "list unknown inputs",
+            intent: "basicconversation.browseLearningOpportunities"
+        },
+        {
+            language: "en",
+            utterance: "How can I help you learn",
+            intent: "basicconversation.browseLearningOpportunities"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.browseLearningOpportunities",
+            answer: "I have received the following inputs which I do understand properly yet: \n\nplaceholderLearningOpportunities"
+        },
         {
             language: "en",
             intent: "explorationof.buyingCULT",

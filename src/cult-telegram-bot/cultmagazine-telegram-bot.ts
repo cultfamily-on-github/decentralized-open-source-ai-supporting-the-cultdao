@@ -1,5 +1,5 @@
 import { Sender } from "../helpers/sender.ts"
-import { ISubscriber, IMessage } from "../helpers/data-model.ts"
+import { ISubscriber, IMessage, ILearningOpportunity } from "../helpers/data-model.ts"
 import { PersistenceService } from "../helpers/persistence-service.ts"
 import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_chatbot/mod.ts"
 import { telegramBotToken } from '../../.env.ts'
@@ -79,9 +79,21 @@ export class CultMagazineTelegramBot {
                 text = `Welcome Ser. I'm honored that you honor my service. What can I do for you?`
             } else {
                 text = await this.getAnswer(message.message.text)
+
+                if (text === "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts") {
+                    const learningOpportunities: ILearningOpportunity[] = await this.persistenceService.readLearningOpportunities()
+                    const newLearningOpportunity: ILearningOpportunity = {
+                        input: message.message.text,
+                        receivedOn: new Date().toUTCString()
+                    }
+                    learningOpportunities.push(newLearningOpportunity)
+                    await this.persistenceService.writeLearningOpportunities(learningOpportunities)
+                }
             }
             if (text === undefined || text === "") {
                 text = `The node nlp server seems unavailable atm. Please submit an issue here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new.`
+            } else if (text === "I have received the following inputs which I do understand properly yet: \n\nplaceholderLearningOpportunities") {
+                text = text.replace("placeholderLearningOpportunities", "http://116.203.185.185:8081/listLearningOpportunities \n\nThere will be a fancy maintenance UI for that soon.")
             }
             await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, text })
 
