@@ -32,7 +32,9 @@ export class SupervisedLearningServer {
         this.serverStarted = true
 
 
+        // http://cultmagazine.org:3002/api/v1/getLearningOpportunities
         this.app.get("/api/v1/getLearningOpportunities", async (request: any, response: any) => {
+            console.log(`reading learning opportunities`)
             const learningOpportunities: ILearningOpportunity[] = await this.persistencService.readLearningOpportunities()
 
             response.send(learningOpportunities)
