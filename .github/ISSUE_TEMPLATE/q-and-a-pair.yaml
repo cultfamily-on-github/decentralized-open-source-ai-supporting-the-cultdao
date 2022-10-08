@@ -1,0 +1,28 @@
+name: Question And Answer Pair
+description: Add a Question And Answer Pair To Train The CULT Beast. You can observe its performance on https://www.cultbeast.org
+title: A new example q & a pair is coming to train the CULT Beast.
+labels: ["trainingdata", "faq"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for investing time to add question & answer pairs to train the CULT Beast.
+  - type: input
+    id: question
+    attributes:
+      label: Question
+      description: Question or Example Input which the Beast shall answer
+      placeholder: ...enter question or example input here
+    validations:
+      required: false
+  - type: textarea
+    id: answer
+    attributes:
+      label: Answer
+      description: Example Answer which the Beast shall give
+      placeholder: ...enter example answer
+      value: "42"
+    validations:
+      required: true
