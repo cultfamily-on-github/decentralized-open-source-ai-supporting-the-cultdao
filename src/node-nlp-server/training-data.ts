@@ -305,10 +305,95 @@ export const trainingData =
             language: "en",
             utterance: "How can I help you learn",
             intent: "basicconversation.browseLearningOpportunities"
+        },
+        {
+            language: "en",
+            utterance: "What's your name",
+            intent: "basicconversation.askForName"
+        },
+        {
+            language: "en",
+            utterance: "do you have a name",
+            intent: "basicconversation.askForName"
+        },
+        {
+            language: "en",
+            utterance: "how old are you",
+            intent: "basicconversation.askForAge"
+        },
+        {
+            language: "en",
+            utterance: "What is CULT core value?",
+            intent: "basicconversation.askForManifesto"
+        },
+        {
+            language: "en",
+            utterance: "What is manifesto?",
+            intent: "basicconversation.askForManifesto"
+        },
+        {
+            language: "en",
+            utterance: "what is todays price?",
+            intent: "basicconversation.askForPrice"
+        },
+        {
+            language: "en",
+            utterance: "how many holders?",
+            intent: "basicconversation.askForHolders"
+        },
+        {
+            language: "en",
+            utterance: "how to stake?",
+            intent: "basicconversation.askForHowToStake"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.askForAge",
+            answer: "Time is an interesting concept to me. I also wonder when I was born. Was it when my programmer had the idea to create me or was it when Telegrams Botfather created me on telegram or was it when my program was restarted the last time or when my brain (neural net) was generated the last time? Whatever. Buy some CULT on https://uniswap.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForHolders",
+            answer: "I only count holders with self hosted wallets because: Not your keys - not your crypto. I do not like centralized exchanges. \n\nTo check those holders with self hosted wallets please visit https://etherscan.io/token/0xf0f9d895aca5c8678f706fb8216fa22957685a13#balances for CULT and https://polygonscan.com/token/0xf0f9D895aCa5c8678f706FB8216fa22957685A13#balances for RVLT."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForHowToStake",
+            answer: "You can stake CULT here: https://app.cultdao.io/stake. And you can stake RVLT here: https://revolt.cultdao.io/stake"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForManifesto",
+            answer: "You might want to read the manifesto: https://cultdao.io/manifesto.pdf"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForName",
+            answer: "https://youtu.be/pbrArfmnrk4?t=25"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForName",
+            answer: "My programmer calls me the CULT Beast. How would you call me?"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForName",
+            answer: "My name is CULT. I'm a Beast."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForName",
+            answer: "You can call me raver's names: https://youtu.be/7Twnmhe948A?t=112 because I'm a raver."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.browseLearningOpportunities",
+            answer: "My programmer calls me the CULT Beast. How would you call me?My name is CULT. I'm a Beast."
+        },
         {
             language: "en",
             intent: "basicconversation.browseLearningOpportunities",
