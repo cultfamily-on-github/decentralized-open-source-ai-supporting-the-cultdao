@@ -345,10 +345,55 @@ export const trainingData =
             language: "en",
             utterance: "how to stake?",
             intent: "basicconversation.askForHowToStake"
+        },
+        {
+            language: "en",
+            utterance: "how are stakers rewarded?",
+            intent: "basicconversation.askForHowStakerAreRewarded"
+        },
+        {
+            language: "en",
+            utterance: "when and how are stakers rewarded?",
+            intent: "basicconversation.askForHowStakerAreRewarded"
+        },
+        {
+            language: "en",
+            utterance: "marketcap",
+            intent: "basicconversation.askForMarketCapitalization"
+        },
+        {
+            language: "en",
+            utterance: "market capitalization",
+            intent: "basicconversation.askForMarketCapitalization"
+        },
+        {
+            language: "en",
+            utterance: "what's the market capitalization",
+            intent: "basicconversation.askForMarketCapitalization"
+        },
+        {
+            language: "en",
+            utterance: "what's the max supply",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "what's the circulating supply",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.askForMaxOrCirculatingSupply",
+            answer: "You can find such infos for CULT here: https://coinmarketcap.com/currencies/cult-dao \n\nand for RVLT here: https://coinmarketcap.com/currencies/revolt-2-earn"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForMarketCapitalization",
+            answer: "You can find the market capitalization of CULT here: https://coinmarketcap.com/currencies/cult-dao \n\nand the market capitalization of RVLT here: https://coinmarketcap.com/currencies/revolt-2-earn"
+        },
         {
             language: "en",
             intent: "basicconversation.askForAge",
