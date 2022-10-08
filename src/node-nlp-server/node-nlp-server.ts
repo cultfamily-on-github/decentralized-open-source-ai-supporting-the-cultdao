@@ -38,7 +38,7 @@ export class CULTNodeNLPServer {
             if (result.answer === "" || result.answer === undefined) {
                 console.log(result) // check this when accurracy seems strange
                 const pleaseHelpMeLearnMessage =
-                    "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts"
+                    "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast."
                 response.send({ answer: pleaseHelpMeLearnMessage });
             } else {
                 response.send({ answer: result.answer });

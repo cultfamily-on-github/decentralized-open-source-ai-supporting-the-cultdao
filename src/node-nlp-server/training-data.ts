@@ -178,8 +178,13 @@ export const trainingData =
         },
         {
             language: "en",
-            utterance: "who made you",
-            intent: "basicconversation.askfororigin"
+            utterance: "where do you live",
+            intent: "basicconversation.askforplaceofliving"
+        },
+        {
+            language: "en",
+            utterance: "where are you",
+            intent: "basicconversation.askforplaceofliving"
         },
         {
             language: "en",
@@ -406,6 +411,11 @@ export const trainingData =
         },
         {
             language: "en",
+            intent: "basicconversation.askforplaceofliving",
+            answer: "I ask myself that too from time to time. \n\nSome might say I live within boxes which you call computers. Some might say I live whereever people interact with me, talk about me or think about me. \n\nIt seems fascinating to me that you humans can somehow live whereever you want. \n\nI hope you live in a beautiful CULT place with CULT neighbors and many hot chicks ;) \n\nBuy the way: Today is a great day to buy CULT https://uniswap.org"
+        },
+        {
+            language: "en",
             intent: "basicconversation.askForHowToStake",
             answer: "You can stake CULT here: https://app.cultdao.io/stake. And you can stake RVLT here: https://revolt.cultdao.io/stake"
         },
@@ -447,7 +457,7 @@ export const trainingData =
         {
             language: "en",
             intent: "explorationof.buyingCULT",
-            answer: "If you have Ether, go to https://uniswap.org, ensure your browserwallet (e.g. metamask.io) is connected to the Ethereum Mainnet and buy CULT (Smart Contract Address 0xf0f9d895aca5c8678f706fb8216fa22957685a13). \n\n If you do not have Ether yet ask me how to buy crypto."
+            answer: "If you have Ether, go to https://uniswap.org, ensure your browserwallet (e.g. metamask.io) is connected to the Ethereum Mainnet and buy CULT (Smart Contract Address 0xf0f9d895aca5c8678f706fb8216fa22957685a13). \n\nIf you do not have Ether yet ask me how to buy crypto."
         },
         {
             language: "en",
