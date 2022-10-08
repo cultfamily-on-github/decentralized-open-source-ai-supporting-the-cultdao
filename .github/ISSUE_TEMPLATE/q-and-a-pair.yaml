@@ -1,6 +1,6 @@
 name: Question And Answer Pair
 description: Add a Question And Answer Pair To Train The CULT Beast
-title: "[Q&A Pair]: "
+title: A new example q & a pair is coming to train the CULT Beast.
 labels: ["trainingdata", "faq"]
 assignees:
   - octocat
