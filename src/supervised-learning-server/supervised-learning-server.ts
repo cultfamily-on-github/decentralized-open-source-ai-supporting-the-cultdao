@@ -48,20 +48,24 @@ export class SupervisedLearningServer {
             console.log(`server has started on http://localhost:${this.port} 🚀`);
         } else {
             const pathToCertificates = '/etc/letsencrypt/live/cultmagazine.org';
-        
+
             console.log(`reading certificates from ${pathToCertificates}`);
-        
-            // const cert = await Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/fullchain.pem`);
-            // const key = await Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/privkey.pem`);
-            // console.log(cert.length);
-            // console.log(key.length);
-        
+
+            Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/fullchain.pem`)
+                .then((cert) => {
+                    console.log(cert.length);
+                })
+            Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/privkey.pem`)
+                .then((key) => {
+                    console.log(key.length);
+                })
+
             const options = {
                 port: this.port,
                 certFile: '/etc/letsencrypt/live/cultmagazine.org/fullchain.pem',
                 keyFile: '/etc/letsencrypt/live/cultmagazine.org/privkey.pem'
             };
-        
+
             try {
                 void this.app.listen(options);
                 console.log(`server has started on https://localhost:${this.port} 🚀`);
@@ -69,11 +73,11 @@ export class SupervisedLearningServer {
                 console.log(`shit happened: ${error}`);
             }
         }
-        
+
 
     }
 
-    
+
 }
 
 
