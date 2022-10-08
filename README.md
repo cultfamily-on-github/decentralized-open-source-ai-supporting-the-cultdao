@@ -68,7 +68,7 @@ deno run --allow-read --allow-net --allow-env --allow-write src/start-cult-teleg
 
 #### The Supervised Learning Server
 ```sh 
-deno run --allow-read --allow-net --allow-env --allow-write --unstable src/start-supervised-learning-server.ts 3002
+deno run --allow-read --allow-net --allow-env --allow-write --unstable src/start-supervised-learning-server.ts 8443
 ```
 
 #### The Bot UI for the "send custom message feature"
@@ -113,7 +113,7 @@ pm2 start src/start-cult-telegram-bot.ts --interpreter="deno" --interpreter-args
 
 #### The Supervised Learning Server
 ```sh 
-pm2 start src/start-supervised-learning-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --allow-write --unstable" -- 3002
+pm2 start src/start-supervised-learning-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --allow-write --unstable" -- 8443
 ```
 
 #### The Bot UI for the "send custom message feature"

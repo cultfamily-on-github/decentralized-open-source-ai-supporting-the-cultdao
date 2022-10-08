@@ -43,9 +43,34 @@ export class SupervisedLearningServer {
         });
 
 
-        this.app.listen(this.port, () => {
-            console.log(`Listen on http://localhost:${this.port}`);
-        });
+        if (this.port.toString().indexOf("443") === -1) {
+            void this.app.listen(this.port)
+            console.log(`server has started on http://localhost:${this.port} 🚀`);
+        } else {
+            const pathToCertificates = '/etc/letsencrypt/live/cultmagazine.org';
+        
+            console.log(`reading certificates from ${pathToCertificates}`);
+        
+            // const cert = await Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/fullchain.pem`);
+            // const key = await Deno.readTextFile(`/etc/letsencrypt/live/cultmagazine.org/privkey.pem`);
+            // console.log(cert.length);
+            // console.log(key.length);
+        
+            const options = {
+                port: this.port,
+                certFile: '/etc/letsencrypt/live/cultmagazine.org/fullchain.pem',
+                keyFile: '/etc/letsencrypt/live/cultmagazine.org/privkey.pem'
+            };
+        
+            try {
+                void this.app.listen(options);
+                console.log(`server has started on https://localhost:${this.port} 🚀`);
+            } catch (error) {
+                console.log(`shit happened: ${error}`);
+            }
+        }
+        
+
     }
 
     

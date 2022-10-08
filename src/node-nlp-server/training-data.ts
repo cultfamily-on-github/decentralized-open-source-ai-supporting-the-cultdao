@@ -367,7 +367,7 @@ export const trainingData =
         {
             language: "en",
             intent: "getBasicInfo.RVLT",
-            answer: "RVLT is the counseling and support system of the CULT. \nIn this respect RVLT is also the deflationary currency which is used for Revolt 2 Earn. \nTo find out more about Revolt 2 Earn please click the corresponding menu entry on https://cultmagazine.org."
+            answer: "RVLT is the counseling and support system of the CULT. \nAs such RVLT is also the deflationary currency which is used for Revolt 2 Earn. \nTo find out more about Revolt 2 Earn please click the corresponding menu entry on https://cultmagazine.org."
         },
         {
             language: "en",
