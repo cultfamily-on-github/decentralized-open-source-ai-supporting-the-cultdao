@@ -525,6 +525,26 @@ export const trainingData =
             language: "en",
             utterance: "how much has been burned",
             intent: "basicconversation.askForBurnedAmount"
+        },
+        {
+            language: "en",
+            utterance: "community",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "how can I join the CULT community",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "how can I team up with people",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "cultdao webpage",
+            intent: "basicconversation.askForCULTDAO.io"
         }
     ]
     ,
@@ -533,6 +553,16 @@ export const trainingData =
             language: "en",
             intent: "basicconversation.askForStatistics",
             answer: "You can find CULTDAO related statistics here: https://dune.com/web3_data/CULT."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForCommunity",
+            answer: "You can find CULT community links in the https://cultmagazine.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForCULTDAO.io",
+            answer: "You can find the webpage of the CULTDAO here: https://cultdao.io"
         },
         {
             language: "en",
@@ -612,7 +642,7 @@ export const trainingData =
         {
             language: "en",
             intent: "basicconversation.askForManifesto",
-            answer: "You might want to read the manifesto: https://cultdao.io/manifesto.pdf"
+            answer: "You might want to read the manifesto: https://cultdao.io/manifesto.pdf."
         },
         {
             language: "en",
