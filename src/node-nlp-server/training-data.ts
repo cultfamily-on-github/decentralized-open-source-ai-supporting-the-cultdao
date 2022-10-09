@@ -543,12 +543,157 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "meet people with similar goals",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "meet people with same interests",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
             utterance: "cultdao webpage",
             intent: "basicconversation.askForCULTDAO.io"
+        },
+        {
+            language: "en",
+            utterance: "cultkamasutra",
+            intent: "basicconversation.askForCultKamasutra"
+        },
+        {
+            language: "en",
+            utterance: "playmates",
+            intent: "basicconversation.askForPlaymates"
+        },
+        {
+            language: "en",
+            utterance: "onlyfans",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "cultgame",
+            intent: "basicconversation.askForCULTGameOfTheDay"
+        },
+        {
+            language: "en",
+            utterance: "what is the cultkamasutra",
+            intent: "basicconversation.askForCultKamasutra"
+        },
+        {
+            language: "en",
+            utterance: "where can I find the cultkamasutra",
+            intent: "basicconversation.askForCultKamasutra"
+        },
+        {
+            language: "en",
+            utterance: "playmates",
+            intent: "basicconversation.askForPlaymates"
+        },
+        {
+            language: "en",
+            utterance: "where are the cult playmates",
+            intent: "basicconversation.askForPlaymates"
+        },
+        {
+            language: "en",
+            utterance: "I want to see the playmates",
+            intent: "basicconversation.askForPlaymates"
+        },
+        {
+            language: "en",
+            utterance: "I want to meet the playmates",
+            intent: "basicconversation.askForPlaymates"
+        },
+        {
+            language: "en",
+            utterance: "is there an onlyfans for cult",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "what is cult onlyfans",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "make money with only cult fans",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "what's the domain of onlycultfans",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "support",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "help",
+            intent: "basicconversation.askForOnlyFans"
+        },
+        {
+            language: "en",
+            utterance: "what is the cultgame of the day",
+            intent: "basicconversation.askForCULTGameOfTheDay"
+        },
+        {
+            language: "en",
+            utterance: "where do I find the cultplayground",
+            intent: "basicconversation.askForCULTGameOfTheDay"
+        },
+        {
+            language: "en",
+            utterance: "game of the day",
+            intent: "basicconversation.askForCULTGameOfTheDay"
+        },
+        {
+            language: "en",
+            utterance: "game",
+            intent: "basicconversation.askForCULTGameOfTheDay"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.askForCULTGameOfTheDay",
+            answer: "You can find the CULT game of the day here: https://cultplayground.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForPlaymates",
+            answer: "You can find CULT playmates here: https://onlycultfans.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForOnlyFans",
+            answer: "The following page might be valuable for you: https://onlycultfans.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForCultKamasutra",
+            answer: "Here we go: https://cultkamasutra.eth.limo"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForCultKamasutra",
+            answer: "I hope you enjoy the https://cultkamasutra.eth.limo. \n\nhttps://www.youtube.com/watch?v=HQ-Zipq-XMs"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.",
+            answer: ""
+        },
+        {
+            language: "en",
+            intent: "basicconversation.",
+            answer: ""
+        },
         {
             language: "en",
             intent: "basicconversation.askForStatistics",
