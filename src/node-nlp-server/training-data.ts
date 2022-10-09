@@ -35,22 +35,22 @@ export const trainingData =
             language: "en",
             utterance: "What is RVLT",
             intent: "getBasicInfo.RVLT"
-        },    
+        },
         {
             language: "en",
             utterance: "What is Revolt",
             intent: "getBasicInfo.RVLT"
-        },    
+        },
         {
             language: "en",
             utterance: "What is rvlt",
             intent: "getBasicInfo.RVLT"
-        },    
+        },
         {
             language: "en",
             utterance: "rvlt",
             intent: "getBasicInfo.RVLT"
-        },    
+        },
         {
             language: "en",
             utterance: "Tell me something about RVLT",
@@ -65,32 +65,32 @@ export const trainingData =
             language: "en",
             utterance: "I want to understand RVLT",
             intent: "getBasicInfo.RVLT"
-        },    
+        },
         {
             language: "en",
             utterance: "Where do I find the CULTDAO Smart Contracts",
             intent: "getSmartContractsInfo.CULTDAOSmartContracts"
-        },        
+        },
         {
             language: "en",
             utterance: "Tell me something about the CULTDAO Smart Contracts",
             intent: "getSmartContractsInfo.CULTDAOSmartContracts"
-        }, 
+        },
         {
             language: "en",
             utterance: "Can you send me a link to the CULTDAO Smart Contracts",
             intent: "getSmartContractsInfo.CULTDAOSmartContracts"
-        }, 
+        },
         {
             language: "en",
             utterance: "I'm looking for CULTDAO Flyers",
             intent: "getMerchandisingInfo.CULTDAO"
-        },        
+        },
         {
             language: "en",
             utterance: "I'm looking for CULTDAO Merchandising",
             intent: "getMerchandisingInfo.CULTDAO"
-        }, 
+        },
         {
             language: "en",
             utterance: "I'm looking for CULTDAO Shops",
@@ -475,10 +475,85 @@ export const trainingData =
             language: "en",
             utterance: "What is the daily business of the CULTDAO",
             intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "where can I find statistics",
+            intent: "basicconversation.askForStatistics"
+        },
+        {
+            language: "en",
+            utterance: "where can I find funded CULT proposals",
+            intent: "basicconversation.askForFundedProposals"
+        },
+        {
+            language: "en",
+            utterance: "where can I find funded RVLT proposals",
+            intent: "basicconversation.askForFundedProposals"
+        },
+        {
+            language: "en",
+            utterance: "where can I find funded CULT proposals",
+            intent: "basicconversation.askForFundedProposals"
+        },
+        {
+            language: "en",
+            utterance: "how much is in the treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "how much is in the CULT treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "how much is in the RVLT treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "how much CULT has already been burned",
+            intent: "basicconversation.askForBurnedAmount"
+        },
+        {
+            language: "en",
+            utterance: "how much RVLT has already been burned",
+            intent: "basicconversation.askForBurnedAmount"
+        },
+        {
+            language: "en",
+            utterance: "how much has been burned",
+            intent: "basicconversation.askForBurnedAmount"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.askForStatistics",
+            answer: "You can find CULTDAO related statistics here: https://dune.com/web3_data/CULT."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForFundedProposals",
+            answer: "Click the menu entry named CULTDAO and scroll to the bottom in the https://cultmagazine.org."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForFundedProposals",
+            answer: "Click the menu entry named CULTDAO in the https://cultmagazine.org and scroll to the bottom to explore funded CULT proposals. \n\nClick the menu entry named Revolt 2 Earn in the https://cultmagazine.org and scroll to the bottom to explore approved RVLT proposals aka acts of revolt."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForTreasuryValue",
+            answer: "You can find CULT related statistics here: https://dune.com/web3_data/CULT. \n\nIf you are interested in RVLT statistics as well, please click the menu entry named Revolt 2 Earn in the https://cultmagazine.org and scroll to the bottom."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForBurnedAmount",
+            answer: "You can explore the amount of burned CULT here: https://etherscan.io/token/0xf0f9d895aca5c8678f706fb8216fa22957685a13#balances. \n\nYou can explore the amount of burned RVLT here: https://polygonscan.com/token/0xf0f9D895aCa5c8678f706FB8216fa22957685A13#balances."
+        },
         {
             language: "en",
             intent: "basicconversation.askForGuardianCriteria",
