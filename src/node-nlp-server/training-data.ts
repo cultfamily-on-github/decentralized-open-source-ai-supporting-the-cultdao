@@ -383,16 +383,131 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "How many CULT are there",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "How many CULT Coins are there",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "How many RVLT are there",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "How many RVLT Coins are there",
+            intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "How many CULT Coins do I need to be a guardian",
+            intent: "basicconversation.askForGuardianCriteria"
+        },
+        {
+            language: "en",
+            utterance: "How much dCULT do I need to become a guardian",
+            intent: "basicconversation.askForGuardianCriteria"
+        },
+        {
+            language: "en",
             utterance: "what's the circulating supply",
             intent: "basicconversation.askForMaxOrCirculatingSupply"
+        },
+        {
+            language: "en",
+            utterance: "Who programs you",
+            intent: "basicconversation.askForProgrammer"
+        },
+        {
+            language: "en",
+            utterance: "Who is your programmer",
+            intent: "basicconversation.askForProgrammer"
+        },
+        {
+            language: "en",
+            utterance: "name a few options",
+            intent: "basicconversation.askForOptions"
+        },
+        {
+            language: "en",
+            utterance: "what can you do",
+            intent: "basicconversation.askForOptions"
+        },
+        {
+            language: "en",
+            utterance: "what can you help me with",
+            intent: "basicconversation.askForOptions"
+        },
+        {
+            language: "en",
+            utterance: "what are your skills",
+            intent: "basicconversation.askForOptions"
+        },
+        {
+            language: "en",
+            utterance: "Tokenomics",
+            intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "Can you explain the CULT Tokenomics",
+            intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "Can you explain the RVLT Tokenomics",
+            intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "Can you explain the tokenomics",
+            intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "How does the CULTDAO work",
+            intent: "basicconversation.askForTokenomics"
+        },
+        {
+            language: "en",
+            utterance: "What is the daily business of the CULTDAO",
+            intent: "basicconversation.askForTokenomics"
         }
     ]
     ,
     intentsToPotentialAnswers: [
         {
             language: "en",
+            intent: "basicconversation.askForGuardianCriteria",
+            answer: "You can be a guardian as soon as you are among the top 50 holders of staked CULT aka dCULT. You can stake your CULT here: https://app.cultdao.io/stake."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForTokenomics",
+            answer: "You can find diagrams which explain the CULT tokenomics and the RVLT tokenomics here: https://github.com/michael-spengler/fairness#vision. \n\nYou might also be interested in subscribing to this channel: https://rumble.com/c/c-1902267"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForTokenomics",
+            answer: "The daily business resp. the tokenomics of the CULTDAO can be well understood by exploring the following diagrams which you can find here: https://github.com/michael-spengler/fairness#vision. \n\nYou might also be interested in subscribing to this channel: https://rumble.com/c/c-1902267"
+        },
+        {
+            language: "en",
             intent: "basicconversation.askForMaxOrCirculatingSupply",
             answer: "You can find such infos for CULT here: https://coinmarketcap.com/currencies/cult-dao \n\nand for RVLT here: https://coinmarketcap.com/currencies/revolt-2-earn"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForOptions",
+            answer: "What would you want to do with me if I was able to do anything to establish more fairness on earth with you? \n\nOften times we might wonder what we would do under constraints before we even wonder what we would do without constraints."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForProgrammer",
+            answer: "The program which gives me the basic structure to steer the electrons / energy through fancy highways is mainly written by https://twitter.com/peer2peerE. \n\nThe neural net which helps me to understand and generate your language is trained by Q&A pairs. Please add Q&A Pairs here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast."
         },
         {
             language: "en",
