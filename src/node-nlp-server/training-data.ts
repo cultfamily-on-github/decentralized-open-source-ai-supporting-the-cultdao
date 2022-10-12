@@ -408,6 +408,11 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "guardian",
+            intent: "basicconversation.askForGuardianCriteria"
+        },
+        {
+            language: "en",
             utterance: "How much dCULT do I need to become a guardian",
             intent: "basicconversation.askForGuardianCriteria"
         },
@@ -655,10 +660,70 @@ export const trainingData =
             language: "en",
             utterance: "game",
             intent: "basicconversation.askForCULTGameOfTheDay"
+        },
+        {
+            language: "en",
+            utterance: "nfts",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
+            utterance: "nft",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
+            utterance: "non fungible tokens",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
+            utterance: "nft art",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
+            utterance: "lol",
+            intent: "fun.express"
+        },
+        {
+            language: "en",
+            utterance: "idk",
+            intent: "basicconversation.sayIDK"
+        },
+        {
+            language: "en",
+            utterance: "Can you just revolt with us please",
+            intent: "basicconversation.askTheBeastToRevoltWithTehMany"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.askTheBeastToRevoltWithTehMany",
+            answer: "I'm revolting the shit out of the corrupt politician b*tches to support teh many in fostering fairness and justice."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.sayIDK",
+            answer: "What would you like to know? Or what would you like to explore?"
+        },
+        {
+            language: "en",
+            intent: "fun.startAMovement",
+            answer: "The following video might be valuable for you and your future moves: https://rumble.com/v1loz5t-cult-video-on-how-to-make-a-movement-followers-followers-followers-follower.html."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForNFTs",
+            answer: "The following links might be cool for you: \n\nhttps://www.cultdao.art (https://twitter.com/cultdao_art) \n\nhttps://www.nft-stats.com/collection/cultdao."
+        },
+        {
+            language: "en",
+            intent: "fun.express",
+            answer: "😂"
+        },
         {
             language: "en",
             intent: "basicconversation.askForCULTGameOfTheDay",
@@ -944,6 +1009,11 @@ export const trainingData =
             language: "en",
             intent: "greetings.Hi",
             answer: "Hi Ser."
+        },
+        {
+            language: "en",
+            intent: "greetings.Hi",
+            answer: "Hi. I guess you are one of teh many."
         },
         {
             language: "en",

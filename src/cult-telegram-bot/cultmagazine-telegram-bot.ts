@@ -80,7 +80,7 @@ export class CultMagazineTelegramBot {
             } else {
                 text = await this.getAnswer(message.message.text)
 
-                if (text === "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data which you can find here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast.") {
+                if (text === "I'm not sure enough to give you a specific answer to your request. You might want to improve my training data: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast.") {
                     const learningOpportunities: ILearningOpportunity[] = await this.persistenceService.readLearningOpportunities()
                     const newLearningOpportunity: ILearningOpportunity = {
                         input: message.message.text,
