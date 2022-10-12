@@ -1,7 +1,7 @@
 # Decentralized Open Source AI Supporting The CULTDAO 
-The goal of this repo is to leverage AI technology to support the [CULTDAO](https://cultdao.io) and with that values like freedom, fairness and love.  
+The content of this repository enables things like the [CULT Telegram Bot](https://t.me/cultmagazine_bot), the [cultbeast.org](https://cultbeast.org), and corresponding discord-, slack- etc. integrations.
 
-The content of this repository enables things like the [CULT Telegram Bot](https://t.me/cultmagazine_bot).
+The goal of this repo is to leverage AI technology to support the [CULTDAO](https://cultdao.io) and with that values like freedom, fairness and love.  
 
 ## Features 
 1. Answer FAQs around the CULT according to the [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts)  
