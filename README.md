@@ -59,7 +59,7 @@ npm i
 cd ../../
 ./src/start-cult-node-nlp-server.sh 8081 
 ```
-#### The CULT Magazine Bot Itself
+#### The CULT Bot Itself
 
 In the main project folder execute the following command to start the CULT Magazine Bot.    
 ```sh
@@ -104,7 +104,7 @@ For this scenario, you might want to add rate limiting via apikeys etc.
 ufw allow 8081/tcp
 ```
 
-#### The telegram bot itself
+#### The CULT Bot Itself
 
 In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
 ```sh
