@@ -1,7 +1,7 @@
 
 if [ "$1" = "" ] 
 then
-    echo "please provide either locally or production mode as a parameter when calling this shell script"
+    echo "please provide either locally or productionmode as a parameter when calling this shell script"
 
 else
 
@@ -15,7 +15,7 @@ then
 fi
 
 
-if [ "$1" = "production mode" ]
+if [ "$1" = "productionmode" ]
 then
     echo "starting the cultbot server in production mode"
     pm2 start src/cult-bot/cult-bot-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-write --allow-env --allow-net --unstable" -- 11443
