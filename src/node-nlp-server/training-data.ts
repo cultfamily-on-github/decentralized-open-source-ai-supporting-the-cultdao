@@ -23,6 +23,36 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "Why should I invest in CULT",
+            intent: "getBasicInfo.CULTDAO"
+        },
+        {
+            language: "en",
+            utterance: "Should I invest in CULT",
+            intent: "getBasicInfo.CULTDAO"
+        },
+        {
+            language: "en",
+            utterance: "Should I invest in RVLT",
+            intent: "getBasicInfo.RVLT"
+        },
+        {
+            language: "en",
+            utterance: "Why should I invest in RVLT",
+            intent: "getBasicInfo.RVLT"
+        },
+        {
+            language: "en",
+            utterance: "What is a DAO",
+            intent: "getBasicInfo.CULTDAO"
+        },
+        {
+            language: "en",
+            utterance: "What is a Decentralized Autonomous Organization",
+            intent: "getBasicInfo.CULTDAO"
+        },
+        {
+            language: "en",
             utterance: "Tell me something about CULTDAO",
             intent: "getBasicInfo.CULTDAO"
         },
