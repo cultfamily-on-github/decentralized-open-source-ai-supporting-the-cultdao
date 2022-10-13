@@ -7,11 +7,13 @@ import { opineCors } from "https://deno.land/x/cors/mod.ts";
 export class CULTBotServer {
 
     private static instance: CULTBotServer
+    private static messageHandler: MessageHandler = MessageHandler.getInstance()
 
     public static getInstance(): CULTBotServer { // singleton pattern
         if (CULTBotServer.instance === undefined) {
             CULTBotServer.instance = new CULTBotServer()
         }
+
         return CULTBotServer.instance
     }
 
@@ -19,13 +21,11 @@ export class CULTBotServer {
     private app = opine();
     private serverIsListening = false
     private persistenceService: PersistenceService
-    private messageHandler: MessageHandler
 
 
 
     private constructor() { // private to ensure programmers adhere to the singleton pattern
         this.persistenceService = PersistenceService.getInstance()
-        this.messageHandler = MessageHandler.getInstance()
         this.app.use(json());
         this.app.use(opineCors())
     }
@@ -40,7 +40,16 @@ export class CULTBotServer {
             });
 
             this.app.post('/api/v1/addMessage', async function (req, res) {
-                await this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
+                console.log(CULTBotServer.messageHandler)
+
+                const messageObject = {
+                    message: {
+                        chat: { id: "cultbeast.org" },
+                        from: { username: "cultbeast.org visitor"},
+                        text: req.body.text
+                    }
+                }
+                await CULTBotServer.messageHandler.handleReceivedMessage(messageObject, EMedium.CULTBEASTDOTORG)
                 res.send({ message: "Message Added. Thank You." })
             })
 

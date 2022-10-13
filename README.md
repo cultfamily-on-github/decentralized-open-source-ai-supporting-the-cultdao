@@ -66,7 +66,7 @@ npm i
 cd ../../
 ./src/start-cult-node-nlp-server.sh 8081 
 ```
-#### The CULT Bot Itself
+#### The CULT Telegram Bot
 
 In the main project folder execute the following command to start the CULT Magazine Bot.    
 ```sh
@@ -86,6 +86,14 @@ deno run --allow-read --allow-net --allow-env --allow-write --unstable src/start
 ```
 
 ### Start it in Production
+
+#### The CULT Bot Server
+
+Execute the following command to start the CULT Bot Server. 
+
+```sh
+./src/start-cult-bot-server.sh productionmode
+```
 #### The Node NLP Server
 You need to have [pm2](https://www.npmjs.com/package/pm2) installed (npm i -g pm2).
 
@@ -106,7 +114,7 @@ For this scenario, you might want to add rate limiting via apikeys etc.
 ufw allow 8081/tcp
 ```
 
-#### The CULT Bot Itself
+#### The CULT Telegram Bot
 
 In the main project folder execute the following command to start the CULT NLP Server serving via port 8081    
 ```sh
@@ -155,7 +163,8 @@ I have added the cycle keyword Stream in some of the latest commit messages see:
 https://t.me/cultmagazine_bot
 
 ### Worth
-0.5 WETH
+0.5 WETH (first attempt)
+0.25 WETH (second attempt)
 
 ### Wallet
 0x9E972a43B3B8D68cD70930697E16429E47E88151
@@ -164,7 +173,8 @@ https://t.me/cultmagazine_bot
 https://polygonscan.com/tx/0x616fad2a885e5257697c555ff072ca39c03aad542b56e2a785dc44a9ffe00445 
 
 ### Act of Revolt ID
-1070
+1070 (first attempt - got rejected 71 vs. 70 votes) 
+(second attempt)
 
 ### Transaction of Reward
 Proposal Pending - see [pending proposals](https://revolt.cultdao.io/pendingProposal)  

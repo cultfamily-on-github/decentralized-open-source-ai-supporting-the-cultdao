@@ -17,8 +17,8 @@ export class PersistenceService {
     public readonly pathToKeyFile = `${this.pathToCerts}/privkey.pem`;
     private pathToOperationalData = `${Deno.cwd()}/operational-data`;
     private pathToSubscribers = `${this.pathToOperationalData}/subscribers.json`;
-    private pathToReceivedMessages = `${this.pathToOperationalData}/received-messages.json`;
-    private pathToSentMessages = `${this.pathToOperationalData}/sent-messages.json`;
+    private pathToMessages = `${this.pathToOperationalData}/messages.json`;
+    // private pathToSentMessages = `${this.pathToOperationalData}/sent-messages.json`;
     private pathToLearningOpportunities = `${this.pathToOperationalData}/learning-opportunities.json`;
 
     private constructor() {
@@ -33,13 +33,13 @@ export class PersistenceService {
         await Deno.writeTextFile(this.pathToSubscribers, JSON.stringify(subscribers))
     }
 
-    public async readReceivedMessages(): Promise<IMessage[]> {
-        const messages: IMessage[] = JSON.parse(await Deno.readTextFile(this.pathToReceivedMessages))
+    public async readMessages(): Promise<IMessage[]> {
+        const messages: IMessage[] = JSON.parse(await Deno.readTextFile(this.pathToMessages))
         return messages
     }
 
-    public async writeReceivedMessages(receivedMessages: IMessage[]): Promise<void> {
-        await Deno.writeTextFile(this.pathToReceivedMessages, JSON.stringify(receivedMessages))
+    public async writeMessages(messages: IMessage[]): Promise<void> {
+        await Deno.writeTextFile(this.pathToMessages, JSON.stringify(messages))
     }
 
     public async readSentMessages(): Promise<IMessage[]> {
