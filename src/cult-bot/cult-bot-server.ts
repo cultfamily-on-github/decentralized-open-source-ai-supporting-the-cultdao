@@ -1,4 +1,4 @@
-import { opine } from "https://deno.land/x/opine@2.3.3/mod.ts";
+import { opine, json } from "https://deno.land/x/opine@2.3.3/mod.ts";
 import { PersistenceService } from "../helpers/persistence-service.ts";
 import { MessageHandler } from "./message-handler.ts";
 import { EMedium } from "../helpers/data-model.ts";
@@ -26,6 +26,7 @@ export class CULTBotServer {
     private constructor() { // private to ensure programmers adhere to the singleton pattern
         this.persistenceService = PersistenceService.getInstance()
         this.messageHandler = MessageHandler.getInstance()
+        this.app.use(json());
         this.app.use(opineCors())
     } 
 
@@ -39,6 +40,7 @@ export class CULTBotServer {
             });
 
             this.app.post('/api/v1/addMessage', async function (req, res) {
+                console.log(`received message ${req.body}`)
                 this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
                 res.send({ message: "Message Added. Thank You." })
             })
