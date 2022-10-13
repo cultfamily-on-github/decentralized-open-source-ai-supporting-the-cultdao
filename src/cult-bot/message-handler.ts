@@ -4,7 +4,7 @@ import { PersistenceService } from "../helpers/persistence-service.ts"
 
 export class MessageHandler {
 
-    private static instance: PersistenceService
+    private static instance: MessageHandler
 
     public static getInstance(): MessageHandler { // singleton pattern
         if (MessageHandler.instance === undefined) {
@@ -21,12 +21,11 @@ export class MessageHandler {
         this.nlpServerURL = `http://localhost:8081`
         this.persistenceService = PersistenceService.getInstance()
     }
+
     public async handleReceivedMessage(messageObject: any, medium: EMedium, bot?: any) {
         if (messageObject.message.from.is_bot) {
             // let potential DOS attacks pass 
         } else {
-
-
             const subscribers = await this.persistenceService.readSubscribers()
             if (subscribers.filter((e: ISubscriber) => e.chatID === messageObject.message.chat.id)[0] === undefined) {
                 const newSubscriber: ISubscriber = {
@@ -72,7 +71,7 @@ export class MessageHandler {
                 // tbd
             } 
 
-            const messages: IMessage[] = await this.persistenceService.readMessages()
+            let messages: IMessage[] = await this.persistenceService.readMessages()
             const receivedMessage: IMessage = {
                 chatID: messageObject.message.chat.id,
                 userName: messageObject.message.from.username,
@@ -88,7 +87,12 @@ export class MessageHandler {
                 date: new Date().toISOString(),
                 text: text
             }
+
             messages.push(sentMessage)
+
+            if (messages.length > 1414) { 
+                messages = this.reduceSizeOfArray(messages, 927)
+            }
             
             await this.persistenceService.writeMessages(messages)
             // const sentMessages: IMessage[] = await this.persistenceService.readSentMessages()
@@ -96,9 +100,6 @@ export class MessageHandler {
             // sentMessages.push(sentMessage)
 
             // await this.persistenceService.writeSentMessages(sentMessages)
-
-
-
         }
     }
 
@@ -112,5 +113,13 @@ export class MessageHandler {
 
         return result.answer
 
+    }
+
+    public reduceSizeOfArray(array: any[], targetSize: number): any[] {
+        if (array.length > targetSize) {
+            array.splice(0, (array.length - targetSize))
+        }
+
+        return array
     }
 }

@@ -18,7 +18,6 @@ export class PersistenceService {
     private pathToOperationalData = `${Deno.cwd()}/operational-data`;
     private pathToSubscribers = `${this.pathToOperationalData}/subscribers.json`;
     private pathToMessages = `${this.pathToOperationalData}/messages.json`;
-    // private pathToSentMessages = `${this.pathToOperationalData}/sent-messages.json`;
     private pathToLearningOpportunities = `${this.pathToOperationalData}/learning-opportunities.json`;
 
     private constructor() {
@@ -40,15 +39,6 @@ export class PersistenceService {
 
     public async writeMessages(messages: IMessage[]): Promise<void> {
         await Deno.writeTextFile(this.pathToMessages, JSON.stringify(messages))
-    }
-
-    public async readSentMessages(): Promise<IMessage[]> {
-        const messages: IMessage[] = JSON.parse(await Deno.readTextFile(this.pathToSentMessages))
-        return messages
-    }
-
-    public async writeSentMessages(subscribers: IMessage[]): Promise<void> {
-        await Deno.writeTextFile(this.pathToSentMessages, JSON.stringify(subscribers))
     }
 
     public async readLearningOpportunities(): Promise<ILearningOpportunity[]> {

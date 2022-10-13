@@ -5,7 +5,7 @@ export interface ISubscriber{
 export interface IMessage{
     chatID: number,
     userName: string, 
-    date: number,
+    date: string,
     text: string
 }
 
