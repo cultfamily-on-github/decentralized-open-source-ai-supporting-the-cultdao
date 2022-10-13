@@ -1,5 +1,6 @@
 import { opine } from "https://deno.land/x/opine@2.3.3/mod.ts";
 import { PersistenceService } from "../helpers/persistence-service.ts";
+import { opineCors } from "https://deno.land/x/cors/mod.ts";
 
 export class CULTBotServer {
 
@@ -21,6 +22,7 @@ export class CULTBotServer {
     
     private constructor() { // private to ensure programmers adhere to the singleton pattern
         this.persistenceService = PersistenceService.getInstance()
+        this.app.use(opineCors())
     } 
 
     public async startListening(port: number) {
