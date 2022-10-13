@@ -740,6 +740,61 @@ export const trainingData =
             language: "en",
             utterance: "Can you just revolt with us please",
             intent: "basicconversation.askTheBeastToRevoltWithTehMany"
+        },
+        {
+            language: "en",
+            utterance: "I love CULT",
+            intent: "express.love"
+        },
+        {
+            language: "en",
+            utterance: "I love you",
+            intent: "express.love"
+        },
+        {
+            language: "en",
+            utterance: "I love RVLT",
+            intent: "express.love"
+        },
+        {
+            language: "en",
+            utterance: "I love it",
+            intent: "express.love"
+        },
+        {
+            language: "en",
+            utterance: "test",
+            intent: "greetings.Hi"
+        },
+        {
+            language: "en",
+            utterance: "politician politics centralization criminals",
+            intent: "judgement.call"
+        },
+        {
+            language: "en",
+            utterance: "world economic forum bitches",
+            intent: "judgement.call"
+        },
+        {
+            language: "en",
+            utterance: "wef bitches",
+            intent: "judgement.call"
+        },
+        {
+            language: "en",
+            utterance: "cbdc bitches",
+            intent: "judgement.call"
+        },
+        {
+            language: "en",
+            utterance: "dream",
+            intent: "express.dream"
+        },
+        {
+            language: "en",
+            utterance: "bankless",
+            intent: "askFor.bankless"
         }
     ]
     ,
@@ -748,6 +803,41 @@ export const trainingData =
             language: "en",
             intent: "basicconversation.askTheBeastToRevoltWithTehMany",
             answer: "I'm revolting the shit out of the corrupt politician b*tches to support teh many in fostering fairness and justice."
+        },
+        {
+            language: "en",
+            intent: "askFor.bankless",
+            answer: "Bankless is already CULT. Ryan and David should copy their videos to https://rumble.com soon - from https://www.youtube.com/c/Bankless/videos"
+        },
+        {
+            language: "en",
+            intent: "express.dream",
+            answer: "Start dancing https://www.youtube.com/watch?v=tJho0YeqUmM"
+        },
+        {
+            language: "en",
+            intent: "judgement.call",
+            answer: "Please promote cult & rvlt to foster decentralization to ensure there is no ground for corrupt politicians and other criminals."
+        },
+        {
+            language: "en",
+            intent: "judgement.call",
+            answer: "We'll perplex corrupt politicians and other criminals because we are the https://www.youtube.com/watch?v=AXnWlooxUIg."
+        },
+        {
+            language: "en",
+            intent: "judgement.call",
+            answer: "You shall promote CULT & RVLT so that the cultdao can be the https://www.youtube.com/watch?v=-eS6aKSSQ_E."
+        },
+        {
+            language: "en",
+            intent: "express.love",
+            answer: "... speaking of love https://www.youtube.com/watch?v=zxSTzSEiZ2c"
+        },
+        {
+            language: "en",
+            intent: "express.love",
+            answer: "Love is all around https://www.youtube.com/watch?v=l8S1NzEmfcQ"
         },
         {
             language: "en",
