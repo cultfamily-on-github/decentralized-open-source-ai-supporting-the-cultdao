@@ -1,5 +1,7 @@
 import { opine } from "https://deno.land/x/opine@2.3.3/mod.ts";
 import { PersistenceService } from "../helpers/persistence-service.ts";
+import { MessageHandler } from "./message-handler.ts";
+import { EMedium } from "../helpers/data-model.ts";
 import { opineCors } from "https://deno.land/x/cors/mod.ts";
 
 export class CULTBotServer {
@@ -16,12 +18,14 @@ export class CULTBotServer {
 
     private app = opine();
     private serverIsListening = false
-    private persistenceService: PersistenceService = false
+    private persistenceService: PersistenceService
+    private messageHandler: MessageHandler
 
 
     
     private constructor() { // private to ensure programmers adhere to the singleton pattern
         this.persistenceService = PersistenceService.getInstance()
+        this.messageHandler = MessageHandler.getInstance()
         this.app.use(opineCors())
     } 
 
@@ -35,6 +39,7 @@ export class CULTBotServer {
             });
 
             this.app.post('/api/v1/addMessage', async function (req, res) {
+                this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
                 res.send({ message: "Message Added. Thank You." })
             })
     

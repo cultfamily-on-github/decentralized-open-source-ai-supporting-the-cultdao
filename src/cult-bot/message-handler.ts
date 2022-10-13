@@ -21,7 +21,7 @@ export class MessageHandler {
         this.nlpServerURL = `http://localhost:8081`
         this.persistenceService = PersistenceService.getInstance()
     }
-    public async handleReceivedMessage(message: any, medium: string, bot?: any) {
+    public async handleReceivedMessage(message: any, medium: EMedium, bot?: any) {
         if (message.message.from.is_bot) {
             // let potential DOS attacks pass 
         } else {
