@@ -22,16 +22,16 @@ export class CULTBotServer {
     private messageHandler: MessageHandler
 
 
-    
+
     private constructor() { // private to ensure programmers adhere to the singleton pattern
         this.persistenceService = PersistenceService.getInstance()
         this.messageHandler = MessageHandler.getInstance()
         this.app.use(json());
         this.app.use(opineCors())
-    } 
+    }
 
     public async startListening(port: number) {
-        
+
         if (this.serverIsListening === false) {
             this.serverIsListening = true
 
@@ -40,20 +40,20 @@ export class CULTBotServer {
             });
 
             this.app.post('/api/v1/addMessage', async function (req, res) {
-                console.log(`received message ${req.body}`)
-                this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
+                console.log(`received message ${JSON.stringify(req.body)}`)
+                await this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
                 res.send({ message: "Message Added. Thank You." })
             })
-    
+
             if (port.toString().indexOf("443") === -1) {
-    
+
                 await this.app.listen(port)
                 console.log(`listening on http://localhost:${port}`)
-    
+
             } else {
-    
+
                 console.log(`reading certificates from ${this.persistenceService.pathToCerts}`);
-    
+
                 Deno.readTextFile(this.persistenceService.pathToCertFile)
                     .then((cert) => {
                         console.log(cert.length);
@@ -62,16 +62,16 @@ export class CULTBotServer {
                     .then((key) => {
                         console.log(key.length);
                     })
-    
+
                 const options = {
                     port: port,
                     certFile: this.persistenceService.pathToCertFile,
                     keyFile: this.persistenceService.pathToKeyFile
                 };
-    
+
                 await this.app.listen(options)
                 console.log(`listening on https://localhost:${port}`)
-    
+
             }
 
         }
