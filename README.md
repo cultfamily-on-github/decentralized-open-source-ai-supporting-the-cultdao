@@ -66,11 +66,6 @@ In the main project folder execute the following command to start the CULT Magaz
 deno run --allow-read --allow-net --allow-env --allow-write src/start-cult-telegram-bot.ts
 ```
 
-#### The Supervised Learning Server
-```sh 
-deno run --allow-read --allow-net --allow-env --allow-write --unstable src/start-supervised-learning-server.ts 8443
-```
-
 #### The Bot UI for the "send custom message feature"
 In the bot-ui-for-manual-updates folder execute:  
 
@@ -111,10 +106,6 @@ In the main project folder execute the following command to start the CULT NLP S
 pm2 start src/start-cult-telegram-bot.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-env --allow-net --allow-write"
 ```
 
-#### The Supervised Learning Server
-```sh 
-pm2 start src/start-supervised-learning-server.ts --interpreter="deno" --interpreter-args="run --allow-read --allow-net --allow-env --allow-write --unstable" -- 8443
-```
 
 #### The Bot UI for the "send custom message feature"
 In the bot-ui-for-manual-updates folder execute:  
