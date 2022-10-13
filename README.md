@@ -49,6 +49,13 @@ Specific open source components we use for this are:
 
 ### Start it Locally
  
+#### The CULT Bot Server
+
+Execute the following command to start the CULT Bot Server. 
+
+```sh
+./src/start-cult-bot-server.sh locally
+```
 #### The Node NLP Server
 
 Execute the following command to start the CULT NLP Server serving via port 8081. 

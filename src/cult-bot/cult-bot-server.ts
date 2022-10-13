@@ -40,7 +40,6 @@ export class CULTBotServer {
             });
 
             this.app.post('/api/v1/addMessage', async function (req, res) {
-                console.log(`received message ${JSON.stringify(req.body)}`)
                 await this.messageHandler.handleReceivedMessage(req.body.text, EMedium.CULTBEASTDOTORG)
                 res.send({ message: "Message Added. Thank You." })
             })
