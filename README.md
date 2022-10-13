@@ -143,24 +143,32 @@ Submit an [act of revolt](https://revolt.cultdao.io/submitProposal).
 You can regard the following as an example:
 
 ### Name
-I have programmed a decentralized open source AI supporting the CULTDAO
+I have programmed the https://cultbeast.org and the CULT AI which can be integrated in any reasonable chat app. 
 
 ### Handle
 https://twitter.com/Peer2peerE
 
 ### Description
-After I have received rewards and great feedback for the https://cultmagazine.org and for the https://cultplayground.org, I'm excited and motivated to program further bold ecosystem features. 
+I hereby reduce the reward amount for the decentralized open source AI supporting the CULTDAO from 0.5 to 0.25, because the act of revolt 1070 got rejected (it was very close). 
 
-This time I programmed a decentralized open source AI supporting the CULTDAO. You can chat with this AI via telegram. Its telegram username is cultmagazine_bot. The direct link to it is: https://t.me/cultmagazine_bot. 
+Before you vote please try the following features properly: 
+1. https://t.me/cultmagazine_bot 
+2. https://cultbeast.org
 
-Everyone is invited to update its [training data](https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/src/node-nlp-server/training-data.ts) which is why I already call it decentralized. On-Chain Solutions for things like that seem not ready yet. I'm happy if anyone opens a pull request one day which allows us to replace my backend server by an On-Chain Solution. I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
+Those two Cult Beast Clients aka CULT AI Clients shall serve as examples. You can integrate the CULT Beast in your favorite chat app like discord, slack etc. 
 
-Feedback is always welcome.
+Everyone is invited to improve the CULT Beast's  [training data](hhttps://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast). This is why I already call it decentralized. On-Chain Solutions for things like that seem not ready yet. I'm happy if anyone opens a pull request one day which allows us to replace my backend server by an On-Chain Solution. I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
+
+The following repository contains mainly the neural nets based natural language processing features: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao.
+
+The following repository contains mainly the https://cultbeast.org specific features and might serve programmers who want to integrate the CULT Beast in their favorite Chat App like discord, slack etc.: https://github.com/cultfamily-on-github/cultbeast-training-interface-microservice 
 
 I have added the cycle keyword Stream in some of the latest commit messages see: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/commits/main
 
+If you click reject please give me feedback on why you reject this proposal so that I can continuously improve my acts of revolt easily.
+
 ### Evidence Link
-https://t.me/cultmagazine_bot
+https://cultbeast.org
 
 ### Worth
 0.5 WETH (first attempt)
