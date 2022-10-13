@@ -12,6 +12,9 @@ export class PersistenceService {
         return PersistenceService.instance
     }
 
+    public readonly pathToCerts = `/etc/letsencrypt/live/cultbeast.org`;
+    public readonly pathToCertFile = `${this.pathToCerts}/fullchain.pem`;
+    public readonly pathToKeyFile = `${this.pathToCerts}/privkey.pem`;
     private pathToOperationalData = `${Deno.cwd()}/operational-data`;
     private pathToSubscribers = `${this.pathToOperationalData}/subscribers.json`;
     private pathToReceivedMessages = `${this.pathToOperationalData}/received-messages.json`;
