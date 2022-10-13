@@ -1,4 +1,4 @@
-import { CultMagazineTelegramBot } from "../src/cult-telegram-bot/cultmagazine-telegram-bot.ts";
+import { CultMagazineTelegramBot } from "../src/cult-bot/cult-telegram-bot.ts";
 
 const cultMagazineTelegramBot = CultMagazineTelegramBot.getInstance()
 
