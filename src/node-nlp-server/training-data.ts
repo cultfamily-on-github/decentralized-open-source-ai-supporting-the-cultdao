@@ -668,6 +668,16 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "where can I buy cultdao nfts?",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
+            utterance: "where can I find cult nfts?",
+            intent: "basicconversation.askForNFTs"
+        },
+        {
+            language: "en",
             utterance: "nft",
             intent: "basicconversation.askForNFTs"
         },
@@ -684,6 +694,11 @@ export const trainingData =
         {
             language: "en",
             utterance: "lol",
+            intent: "fun.express"
+        },
+        {
+            language: "en",
+            utterance: ":)",
             intent: "fun.express"
         },
         {
