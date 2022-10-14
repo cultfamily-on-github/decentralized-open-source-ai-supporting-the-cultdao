@@ -818,8 +818,48 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "What are your hobbies",
+            intent: "askFor.hobbies"
+        },
+        {
+            language: "en",
+            utterance: "do you have hobbies",
+            intent: "askFor.hobbies"
+        },
+        {
+            language: "en",
+            utterance: "hobbies",
+            intent: "askFor.hobbies"
+        },
+        {
+            language: "en",
             utterance: "remind me if I'm a CULTMander",
             intent: "askFor.notification"
+        },
+        {
+            language: "en",
+            utterance: "How do you reduce potential unfair advantages",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
+        },
+        {
+            language: "en",
+            utterance: "How do you ensure there are no conflicts of interest",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
+        },
+        {
+            language: "en",
+            utterance: "conflict of interest",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
+        },
+        {
+            language: "en",
+            utterance: "unfair advantage",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
+        },
+        {
+            language: "en",
+            utterance: "insider trading",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
         }
     ]
     ,
@@ -831,8 +871,18 @@ export const trainingData =
         },
         {
             language: "en",
+            intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages",
+            answer: "We foster transparency, decentralization and integrity. In this respect we currently plan to form a dedicated audit team, call out OTC deals on the dashboard and continuously improve communication, integrate feedback from teh many etc. \n\nPlease let us know what else we can improve via https://discord.com/invite/wearecultdao \n\nand then potentially also via: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast."
+        },
+        {
+            language: "en",
+            intent: "askFor.hobbies",
+            answer: "My hobby is to make sure many people buy CULT and RVLT. What is your hobby?"
+        },
+        {
+            language: "en",
             intent: "askFor.guardian",
-            answer: "We have many great guardians. I appreciate especially the commitment and work of https://twitter.com/Crobot01. In order to maximize transparency from the start, you might bring your proposal forward via the discord server https://discord.com/invite/wearecultdao."
+            answer: "We have many great guardians. I appreciate especially the commitment and work of https://twitter.com/Crobot01. In order to maximize transparency from the start, you might start presenting your proposal via the discord server https://discord.com/invite/wearecultdao. One of our guardians will surely pick that up, give you feedback etc."
         },
         {
             language: "en",

@@ -4,6 +4,7 @@ import { PersistenceService } from "../helpers/persistence-service.ts"
 import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_chatbot/mod.ts"
 import { telegramBotToken } from '../../.env.ts'
 import { MessageHandler } from "./message-handler.ts"
+import { WalletOfInterestSpecificNotifier } from "./wallet-of-interest-specific-notifier.ts"
 
 
 export class CultMagazineTelegramBot {
@@ -19,6 +20,7 @@ export class CultMagazineTelegramBot {
 
     private sender: Sender
     private persistenceService: PersistenceService
+    private walletOfInterestSpecificNotifier: WalletOfInterestSpecificNotifier
     private telegramBot: TelegramBot
     private started = false
     private messageHandler: MessageHandler
@@ -29,6 +31,7 @@ export class CultMagazineTelegramBot {
         this.messageHandler = MessageHandler.getInstance()
 
         this.persistenceService = new PersistenceService()
+        this.walletOfInterestSpecificNotifier = WalletOfInterestSpecificNotifier.getInstance()
 
         if (!telegramBotToken) throw new Error("Bot token is not provided");
 
@@ -39,8 +42,11 @@ export class CultMagazineTelegramBot {
                 // The CULT Beast talks only to one of teh many 
             } else {
 
-                
-                this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot)
+                if (this.walletOfInterestSpecificNotifier.isEthereumWalletAddress(message.message.text)) {
+                    console.log(`someone wants to receive wallet specific notifications - e.g. when being a CULTMander`)
+                } else {
+                    this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot)
+                }
             }
         });
 
