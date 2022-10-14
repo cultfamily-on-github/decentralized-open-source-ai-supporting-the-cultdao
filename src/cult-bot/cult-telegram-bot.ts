@@ -1,10 +1,8 @@
-import { Sender } from "../helpers/sender.ts"
-import { ISubscriber, EMedium } from "../helpers/data-model.ts"
-import { PersistenceService } from "../helpers/persistence-service.ts"
+import { EMedium } from "../helpers/data-model.ts"
 import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_chatbot/mod.ts"
 import { telegramBotToken } from '../../.env.ts'
 import { MessageHandler } from "./message-handler.ts"
-import { WalletOfInterestSpecificNotifier } from "./wallet-of-interest-specific-notifier.ts"
+import { ReminderService } from "./reminder-service.ts";
 
 
 export class CultMagazineTelegramBot {
@@ -18,22 +16,17 @@ export class CultMagazineTelegramBot {
         return CultMagazineTelegramBot.instance
     }
 
-    private sender: Sender
-    private persistenceService: PersistenceService
-    private walletOfInterestSpecificNotifier: WalletOfInterestSpecificNotifier
+    private reminderService: ReminderService
     private telegramBot: TelegramBot
-    private started = false
     private messageHandler: MessageHandler
 
     private constructor() {
-        this.sender = Sender.getInstance()
-
-        this.messageHandler = MessageHandler.getInstance()
-
-        this.persistenceService = new PersistenceService()
-        this.walletOfInterestSpecificNotifier = WalletOfInterestSpecificNotifier.getInstance()
 
         if (!telegramBotToken) throw new Error("Bot token is not provided");
+        
+        this.messageHandler = MessageHandler.getInstance()
+        this.reminderService = ReminderService.getInstance(telegramBotToken)
+
 
         this.telegramBot = new TelegramBot(telegramBotToken);
 
@@ -42,8 +35,13 @@ export class CultMagazineTelegramBot {
                 // The CULT Beast talks only to one of teh many 
             } else {
 
-                if (this.walletOfInterestSpecificNotifier.isEthereumWalletAddress(message.message.text)) {
-                    console.log(`someone wants to receive wallet specific notifications - e.g. when being a CULTMander`)
+                if (this.reminderService.isEthereumWalletAddress(message.message.text.toLowerCase())) {
+
+                    this.reminderService.registerWalletOfInterest(message.message.text)
+                    const notificationsActiveInfo =
+                        `I'll regularly check if this wallet address is a CULTMander in the current voting cycle and send a reminder to the telegram user who sent this wallet address as a CULTMander reminder.`
+                    await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, notificationsActiveInfo })
+
                 } else {
                     this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot)
                 }
@@ -54,28 +52,9 @@ export class CultMagazineTelegramBot {
             polling: true,
         });
 
+        this.reminderService.startReminderCheckInterval()
+
         console.log(`https://t.me/cultmagazine_bot is there for you.`)
-    }
-
-
-
-    public startCULTGameOfTheDayReminderInterval() {
-
-        if (this.started) {
-            throw new Error(`The Game Of the Day Reminder Interval has already been started earlier.`)
-        }
-        this.started = true
-        setInterval(async () => {
-            const dt = new Date()
-            if (dt.getHours() === 2 && dt.getMinutes() === 10) {
-                const subscribers: ISubscriber[] = await this.persistenceService.readSubscribers()
-                for (const subscriber of subscribers) {
-                    this.sender.send(telegramBotToken, subscriber.chatID, `CULT Game of the Day: https://cultplayground.org`)
-                }
-            }
-            console.log(dt.getHours(), dt.getMinutes())
-        }, 1000 * 60) // checking each minute if it's time to remind subscribers of the new Game of the Day
-
     }
 
 }

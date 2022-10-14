@@ -1,6 +1,7 @@
 export interface ISubscriber{
     chatID: number
     userName: string, 
+    wois?: string[]
 }
 export interface IMessage{
     chatID: number,

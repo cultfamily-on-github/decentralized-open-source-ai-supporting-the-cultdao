@@ -1,5 +1,3 @@
 import { CultMagazineTelegramBot } from "../src/cult-bot/cult-telegram-bot.ts";
 
-const cultMagazineTelegramBot = CultMagazineTelegramBot.getInstance()
-
-cultMagazineTelegramBot.startCULTGameOfTheDayReminderInterval()
+CultMagazineTelegramBot.getInstance() // that's already making the CULT Beast listen...
