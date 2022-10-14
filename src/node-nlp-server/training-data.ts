@@ -383,6 +383,16 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "how many cult holders are there?",
+            intent: "basicconversation.askForHolders"
+        },
+        {
+            language: "en",
+            utterance: "how many rvlt holders are there?",
+            intent: "basicconversation.askForHolders"
+        },
+        {
+            language: "en",
             utterance: "how to stake?",
             intent: "basicconversation.askForHowToStake"
         },
@@ -877,7 +887,7 @@ export const trainingData =
         {
             language: "en",
             intent: "askFor.notification",
-            answer: "Please send me a public Ethereum Wallet Address without any additional text. I will interpret this as a wallet of interest for your telegram user. This only works if you send it to me via telegram of course."
+            answer: "Please send me a public Ethereum Wallet Address without any additional text. I will interpret this as a wallet of interest (woi) for your telegram user. This only works if you send it to me via telegram of course. I will send you a reminder via telegram as soon as your woi has the honor to vote on acts of revolt."
         },
         {
             language: "en",
