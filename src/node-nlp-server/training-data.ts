@@ -8,6 +8,11 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "CULT",
+            intent: "getBasicInfo.CULT"
+        },
+        {
+            language: "en",
             utterance: "Tell me something about CULT",
             intent: "getBasicInfo.CULT"
         },
@@ -814,6 +819,11 @@ export const trainingData =
         {
             language: "en",
             utterance: "how can I be reminded if I'm a CULTMander in the current voting cycle",
+            intent: "askFor.notification"
+        },
+        {
+            language: "en",
+            utterance: "can you remind me to vote on acts of revolt",
             intent: "askFor.notification"
         },
         {
