@@ -23,9 +23,7 @@ export class MessageHandler {
     }
 
     public async handleReceivedMessage(messageObject: any, medium: EMedium, bot?: any) {
-        if (messageObject.message.from.is_bot) {
-            // let potential DOS attacks pass 
-        } else {
+
             const subscribers = await this.persistenceService.readSubscribers()
             if (subscribers.filter((e: ISubscriber) => e.chatID === messageObject.message.chat.id)[0] === undefined) {
                 const newSubscriber: ISubscriber = {
@@ -100,7 +98,6 @@ export class MessageHandler {
             // sentMessages.push(sentMessage)
 
             // await this.persistenceService.writeSentMessages(sentMessages)
-        }
     }
 
         

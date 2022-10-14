@@ -793,12 +793,52 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "who is mr o",
+            intent: "basicconversation.askForMrO"
+        },
+        {
+            language: "en",
             utterance: "bankless",
             intent: "askFor.bankless"
+        },
+        {
+            language: "en",
+            utterance: "who is the best guardian",
+            intent: "askFor.guardian"
+        },
+        {
+            language: "en",
+            utterance: "whom can I contact to bring my proposal forward",
+            intent: "askFor.guardian"
+        },
+        {
+            language: "en",
+            utterance: "how can I be reminded if I'm a CULTMander in the current voting cycle",
+            intent: "askFor.notification"
+        },
+        {
+            language: "en",
+            utterance: "remind me if I'm a CULTMander",
+            intent: "askFor.notification"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "askFor.notification",
+            answer: "Please send me a public Ethereum Wallet Address without any additional text. I will interpret this as a wallet of interest for your telegram user. This only works if you send it to me via telegram of course."
+        },
+        {
+            language: "en",
+            intent: "askFor.guardian",
+            answer: "We have many great guardians. I appreciate especially the commitment and work of https://twitter.com/Crobot01. In order to maximize transparency from the start, you might bring your proposal forward via the discord server https://discord.com/invite/wearecultdao."
+        },
+        {
+            language: "en",
+            intent: "basicconversation.askForMrO",
+            answer: "Who knows? Mr. O might be like: https://www.youtube.com/watch?v=YSGCNYGGteQ."
+        },
         {
             language: "en",
             intent: "basicconversation.askTheBeastToRevoltWithTehMany",

@@ -34,7 +34,15 @@ export class CultMagazineTelegramBot {
 
         this.telegramBot = new TelegramBot(telegramBotToken);
 
-        this.telegramBot.on(UpdateType.Message, async (message: any) => this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot));
+        this.telegramBot.on(UpdateType.Message, async (message: any) => {
+            if (message.message.from.is_bot) {
+                // The CULT Beast talks only to one of teh many 
+            } else {
+
+                
+                this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot)
+            }
+        });
 
         this.telegramBot.run({
             polling: true,
