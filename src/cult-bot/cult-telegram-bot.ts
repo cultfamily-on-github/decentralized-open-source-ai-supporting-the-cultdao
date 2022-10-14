@@ -23,7 +23,7 @@ export class CultMagazineTelegramBot {
     private constructor() {
 
         if (!telegramBotToken) throw new Error("Bot token is not provided");
-        
+
         this.messageHandler = MessageHandler.getInstance()
         this.reminderService = ReminderService.getInstance(telegramBotToken)
 
@@ -37,10 +37,10 @@ export class CultMagazineTelegramBot {
 
                 if (this.reminderService.isEthereumWalletAddress(message.message.text.toLowerCase())) {
 
-                    this.reminderService.registerWalletOfInterest(message.message.text)
-                    const notificationsActiveInfo =
-                        `I'll regularly check if this wallet address is a CULTMander in the current voting cycle and send a reminder to the telegram user who sent this wallet address as a CULTMander reminder.`
-                    await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, notificationsActiveInfo })
+                    // this.reminderService.registerWalletOfInterest(message)
+                    // const notificationsActiveInfo =
+                    //     `I'll regularly check if this wallet address is a CULTMander in the current voting cycle and send a reminder to the telegram user who sent this wallet address as a CULTMander reminder.`
+                    // await this.telegramBot.sendMessage({ chat_id: message.message.chat.id, notificationsActiveInfo })
 
                 } else {
                     this.messageHandler.handleReceivedMessage(message, EMedium.TELEGRAM, this.telegramBot)

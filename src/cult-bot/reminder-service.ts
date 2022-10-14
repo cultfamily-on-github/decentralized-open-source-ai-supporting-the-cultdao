@@ -62,9 +62,9 @@ export class ReminderService {
         this.started = true
         setInterval(async () => {
             const dt = new Date()
-            // if (dt.getHours() === 2 && dt.getMinutes() === 10) {
+            if (dt.getHours() === 2 && dt.getMinutes() === 10) {
                 await this.sendReminders()
-            // }
+            }
             console.log(dt.getHours(), dt.getMinutes())
         }, 1000 * 60) // checking each minute if it's time to remind subscribers of the new Game of the Day
 
