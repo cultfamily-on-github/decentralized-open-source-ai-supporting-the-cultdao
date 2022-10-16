@@ -880,6 +880,46 @@ export const trainingData =
             language: "en",
             utterance: "insider trading",
             intent: "dailyBusinessQuestions.reducePotentiallyUnfairAdvantages"
+        },
+        {
+            language: "en",
+            utterance: "where can i submit an act of revolt",
+            intent: "askFor.submitActOfRevolt"
+        },
+        {
+            language: "en",
+            utterance: "where can i submit a CULT investment proposal",
+            intent: "askFor.guardian"
+        },
+        {
+            language: "en",
+            utterance: "where can i submit a CULT proposal",
+            intent: "askFor.guardian"
+        },
+        {
+            language: "en",
+            utterance: "who is elvis",
+            intent: "askFor.elvis"
+        },
+        {
+            language: "en",
+            utterance: "stupid",
+            intent: "express.stupid"
+        },
+        {
+            language: "en",
+            utterance: "your answer was wrong",
+            intent: "express.stupid"
+        },
+        {
+            language: "en",
+            utterance: "not helpful",
+            intent: "express.stupid"
+        },
+        {
+            language: "en",
+            utterance: "wrong answer",
+            intent: "express.stupid"
         }
     ]
     ,
@@ -888,6 +928,21 @@ export const trainingData =
             language: "en",
             intent: "askFor.notification",
             answer: "Please send me a public Ethereum Wallet Address without any additional text. I will interpret this as a wallet of interest (woi) for your telegram user. This only works if you send it to me via telegram of course. I will send you a reminder via telegram as soon as your woi has the honor to vote on acts of revolt."
+        },
+        {
+            language: "en",
+            intent: "express.stupid",
+            answer: "Please help me to become a better version of myself. You can do so by defining Q&A pairs here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast."
+        },
+        {
+            language: "en",
+            intent: "askFor.submitActOfRevolt",
+            answer: "Here you can submit your acts of revolt: https://revolt.cultdao.io/submitProposal"
+        },
+        {
+            language: "en",
+            intent: "askFor.elvis",
+            answer: "https://youtu.be/6ufZhILAxNc?t=71 turn up the volume."
         },
         {
             language: "en",
