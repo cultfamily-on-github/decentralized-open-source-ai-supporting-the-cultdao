@@ -34,6 +34,7 @@ export class CULTNodeNLPServer {
         // http://65.108.89.236:8081/getresponse/input/CULT // port 8081 currently closed via firewall
         // if someone wants to reuse the nlp part like this, I can open it and potentially introduce api keys to protect this server
         // people can already reuse those features indirectly - just like the https://cultbeast.org (also a CULT AI client) reuses them. 
+        // see also https://github.com/cultfamily-on-github/cultbeast-training-interface-microservice/blob/main/frontend/cultbeast.org-ui/src/App.svelte#L58-L78
         this.app.get("/getresponse/input/:input", async (request: any, response: any) => {
             const result: any = await this.nodeNLPService.getResponse(request.params.input)
             if (result.answer === "" || result.answer === undefined) {
