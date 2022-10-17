@@ -553,6 +553,26 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "Cultdao Treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "Revolt Treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "RVLT Treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
+            utterance: "Treasury",
+            intent: "basicconversation.askForTreasuryValue"
+        },
+        {
+            language: "en",
             utterance: "how much is in the CULT treasury",
             intent: "basicconversation.askForTreasuryValue"
         },
