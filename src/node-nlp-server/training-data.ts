@@ -920,6 +920,51 @@ export const trainingData =
             language: "en",
             utterance: "wrong answer",
             intent: "express.stupid"
+        },
+        {
+            language: "en",
+            utterance: "What is the price of Cult",
+            intent: "askFor.prices"
+        },
+        {
+            language: "en",
+            utterance: "What is the price of RVLT",
+            intent: "askFor.prices"
+        },
+        {
+            language: "en",
+            utterance: "Cult price",
+            intent: "askFor.prices"
+        },
+        {
+            language: "en",
+            utterance: "RVLT price",
+            intent: "askFor.prices"
+        },
+        {
+            language: "en",
+            utterance: "Quantum Physics",
+            intent: "askFor.quantumPhysics"
+        },
+        {
+            language: "en",
+            utterance: "What is an Act of Revolt",
+            intent: "askFor.actOfRevoltInfo"
+        },
+        {
+            language: "en",
+            utterance: "What are Acts of Revolt",
+            intent: "askFor.actOfRevoltInfo"
+        },
+        {
+            language: "en",
+            utterance: "What is an Act of RVLT",
+            intent: "askFor.actOfRevoltInfo"
+        },
+        {
+            language: "en",
+            utterance: "What are Acts of RVLT",
+            intent: "askFor.actOfRevoltInfo"
         }
     ]
     ,
@@ -928,6 +973,11 @@ export const trainingData =
             language: "en",
             intent: "askFor.notification",
             answer: "Please send me a public Ethereum Wallet Address without any additional text. I will interpret this as a wallet of interest (woi) for your telegram user. This only works if you send it to me via telegram of course. I will send you a reminder via telegram as soon as your woi has the honor to vote on acts of revolt."
+        },
+        {
+            language: "en",
+            intent: "askFor.prices",
+            answer: "You can find price infos for CULT here: https://coinmarketcap.com/currencies/cult-dao \n\nand for RVLT here: https://coinmarketcap.com/currencies/revolt-2-earn"
         },
         {
             language: "en",
@@ -1051,13 +1101,13 @@ export const trainingData =
         },
         {
             language: "en",
-            intent: "basicconversation.",
-            answer: ""
+            intent: "askFor.quantumPhysics",
+            answer: "Quantum phsics is fancy: https://www.youtube.com/watch?v=lZ3bPUKo5zc"
         },
         {
             language: "en",
-            intent: "basicconversation.",
-            answer: ""
+            intent: "askFor.actOfRevoltInfo",
+            answer: "Infos about acts of revolt can be found here: https://wearecultdao.medium.com/acts-of-revolt-f64a48b93f7b \n\nand here: https://rumble.com/v1lf3yb-revolt-2-earn-in-100-seconds-michael-saylor-talks-about-revolt-2-earn.html \n\nand here: https://revolt.cultdao.io/closedProposal"
         },
         {
             language: "en",
@@ -1087,7 +1137,7 @@ export const trainingData =
         {
             language: "en",
             intent: "basicconversation.askForTreasuryValue",
-            answer: "You can find CULT related statistics here: https://dune.com/web3_data/CULT. \n\nIf you are interested in RVLT statistics as well, please click the menu entry named Revolt 2 Earn in the https://cultmagazine.org and scroll to the bottom."
+            answer: "You can find CULT related statistics here: https://dune.com/cultdaoio/cult-dao and here: https://dune.com/web3_data/CULT. \n\nIf you are interested in RVLT statistics as well, please click the menu entry named Revolt 2 Earn in the https://cultmagazine.org and scroll to the bottom."
         },
         {
             language: "en",
