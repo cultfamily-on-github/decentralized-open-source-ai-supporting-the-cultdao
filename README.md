@@ -143,29 +143,28 @@ Submit an [act of revolt](https://revolt.cultdao.io/submitProposal).
 You can regard the following as an example:
 
 ### Name
-I have programmed the https://cultbeast.org and the CULT AI which can be integrated in any reasonable chat app. 
+I have programmed an FAQ Service, CULTMander Reminder Service, Game of the Day Reminder Service
 
 ### Handle
 https://twitter.com/Peer2peerE
 
 ### Description
-I hereby reduce the reward amount for the decentralized open source AI supporting the CULTDAO from 0.5 to 0.25, because the act of revolt 1070 got rejected (it was very close). 
+Many of you are talking about CULT with people who already talk about CULT. I can imagine it would be even better to talk about CULT with people who do not yet know about CULT to gain reach for the CULT. So please share the following links with all your neighbors, friends, colleagues and relatives.
 
-Before you vote please try the following features properly: 
-1. https://t.me/cultmagazine_bot 
-2. https://cultbeast.org
+1. https://cultbeast.org
+2. https://t.me/cultmagazine_bot 
 
-Those two Cult Beast Clients aka CULT AI Clients shall serve as examples. You can integrate the CULT Beast in your favorite chat app like discord, slack etc. 
-
-Everyone is invited to improve the CULT Beast's  [training data](hhttps://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast). This is why I already call it decentralized. On-Chain Solutions for things like that seem not ready yet. I'm happy if anyone opens a pull request one day which allows us to replace my backend server by an On-Chain Solution. I described the technological details here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/blob/main/README.md. 
-
-The following repository contains mainly the neural nets based natural language processing features: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao.
-
-The following repository contains mainly the https://cultbeast.org specific features and might serve programmers who want to integrate the CULT Beast in their favorite Chat App like discord, slack etc.: https://github.com/cultfamily-on-github/cultbeast-training-interface-microservice 
-
-I have added the cycle keyword Stream in some of the latest commit messages see: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/commits/main
+Just do it. Invite newbies to crypto & cult and show them where they get the information they need to start to support the CULT.
 
 If you click reject please give me feedback on why you reject this proposal so that I can continuously improve my acts of revolt easily.
+
+1070 got rejected 
+1096 got rejected 
+So I try it a third time with reduced reward claim of 0.1 WETH
+
+Feedback and further FAQ examples are welcome https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/4
+
+
 
 ### Evidence Link
 https://cultbeast.org
@@ -173,6 +172,7 @@ https://cultbeast.org
 ### Worth
 0.5 WETH (first attempt)
 0.25 WETH (second attempt)
+0.1 WETH (third attempt)
 
 ### Wallet
 0x9E972a43B3B8D68cD70930697E16429E47E88151
@@ -182,7 +182,8 @@ https://polygonscan.com/tx/0x616fad2a885e5257697c555ff072ca39c03aad542b56e2a785d
 
 ### Act of Revolt ID
 1070 (first attempt - got rejected 71 vs. 70 votes) 
-(second attempt)
+1096 (second attempt - got rejected)
+third attempt coming :)
 
 ### Transaction of Reward
 Proposal Pending - see [pending proposals](https://revolt.cultdao.io/pendingProposal)  
