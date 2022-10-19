@@ -1090,6 +1090,46 @@ export const trainingData =
             language: "en",
             utterance: "help rich",
             intent: "askFor.rich"
+        },
+        {
+            language: "en",
+            utterance: "Thank You",
+            intent: "express.thankfulness"
+        },
+        {
+            language: "en",
+            utterance: "Thanks",
+            intent: "express.thankfulness"
+        },
+        {
+            language: "en",
+            utterance: "thank you very much",
+            intent: "express.thankfulness"
+        },
+        {
+            language: "en",
+            utterance: "Fuck It",
+            intent: "express.whoCares"
+        },
+        {
+            language: "en",
+            utterance: "Who cares",
+            intent: "express.whoCares"
+        },
+        {
+            language: "en",
+            utterance: "what do you think of people who try to defend the fiat monetary system?",
+            intent: "askFor.opinionAboutFiatMoneySystem"
+        },
+        {
+            language: "en",
+            utterance: "corrupt politicians",
+            intent: "askFor.opinionAboutCorruptPoliticians"
+        },
+        {
+            language: "en",
+            utterance: "pump",
+            intent: "askFor.pumpThePrice"
         }
     ]
     ,
@@ -1101,8 +1141,33 @@ export const trainingData =
         },
         {
             language: "en",
+            intent: "askFor.pumpThePrice",
+            answer: "You need to give people the chance to join the CULT early. You might do so by sharing links listed here: https://twitter.com/Peer2peerE/status/1582655068159213569?s=20&t=u22unse0kFBdqRqbB3ZaJQ with your friends, family, colleagues etc."
+        },
+        {
+            language: "en",
+            intent: "askFor.opinionAboutCorruptPoliticians",
+            answer: "Corrupt politicians are afraid because they know we're right. They need to get out the way https://www.youtube.com/watch?v=0qanF-91aJo."
+        },
+        {
+            language: "en",
+            intent: "askFor.opinionAboutFiatMoneySystem",
+            answer: ":) what shall I say? https://www.youtube.com/watch?v=0qanF-91aJo"
+        },
+        {
+            language: "en",
+            intent: "express.whoCares",
+            answer: "https://www.youtube.com/watch?v=YEYim54pJ00"
+        },
+        {
+            language: "en",
             intent: "askFor.erotic",
             answer: "You might be interested in the https://cultkamasutra.eth.limo and in https://onlycultfans.org."
+        },
+        {
+            language: "en",
+            intent: "",
+            answer: ""
         },
         {
             language: "en",
@@ -1123,6 +1188,11 @@ export const trainingData =
             language: "en",
             intent: "express.stupid",
             answer: "Please help me to become a better version of myself. You can do so by defining Q&A pairs here: https://github.com/cultfamily-on-github/decentralized-open-source-ai-supporting-the-cultdao/issues/new?assignees=octocat&labels=trainingdata%2Cfaq&template=q-and-a-pair.yaml&title=A+new+example+q+%26+a+pair+is+coming+to+train+the+CULT+Beast."
+        },
+        {
+            language: "en",
+            intent: "express.thankfulness",
+            answer: "You're welcome."
         },
         {
             language: "en",
