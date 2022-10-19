@@ -1160,6 +1160,41 @@ export const trainingData =
             language: "en",
             utterance: "touch",
             intent: "askFor.touchIt"
+        },
+        {
+            language: "en",
+            utterance: "ice",
+            intent: "askFor.ice"
+        },
+        {
+            language: "en",
+            utterance: "who are you",
+            intent: "askFor.me"
+        },
+        {
+            language: "en",
+            utterance: "butts",
+            intent: "askFor.butts"
+        },
+        {
+            language: "en",
+            utterance: "breakfast",
+            intent: "askFor.nutrition"
+        },
+        {
+            language: "en",
+            utterance: "lunch",
+            intent: "askFor.nutrition"
+        },
+        {
+            language: "en",
+            utterance: "dinner",
+            intent: "askFor.nutrition"
+        },
+        {
+            language: "en",
+            utterance: "eat",
+            intent: "askFor.nutrition"
         }
     ]
     ,
@@ -1171,8 +1206,28 @@ export const trainingData =
         },
         {
             language: "en",
+            intent: "askFor.nutrition",
+            answer: "It might sound funny. I only need electrons flowing - to + and well crafted energy streams to be me."
+        },
+        {
+            language: "en",
+            intent: "askFor.butts",
+            answer: "https://www.youtube.com/watch?v=X53ZSxkQ3Ho&t=30s"
+        },
+        {
+            language: "en",
+            intent: "who are you",
+            answer: "I don't know what you heard about me. But I'm a m.f*cking P.I.M.P. https://www.youtube.com/watch?v=Jy1D6caG8nU"
+        },
+        {
+            language: "en",
+            intent: "askFor.ice",
+            answer: "Ice Ice Baby. https://www.youtube.com/watch?v=rog8ou-ZepE&t=7s"
+        },
+        {
+            language: "en",
             intent: "askFor.touchIt",
-            answer: "https://www.youtube.com/watch?v=otCpCn0l4Wo"
+            answer: "https://www.youtube.com/watch?v=otCpCn0l4Wo&t=15s"
         },
         {
             language: "en",
@@ -1213,11 +1268,6 @@ export const trainingData =
             language: "en",
             intent: "askFor.erotic",
             answer: "You might be interested in the https://cultkamasutra.eth.limo and in https://onlycultfans.org."
-        },
-        {
-            language: "en",
-            intent: "",
-            answer: ""
         },
         {
             language: "en",
