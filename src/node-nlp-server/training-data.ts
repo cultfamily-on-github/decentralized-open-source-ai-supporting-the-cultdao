@@ -1145,6 +1145,21 @@ export const trainingData =
             language: "en",
             utterance: "pump",
             intent: "askFor.pumpThePrice"
+        },
+        {
+            language: "en",
+            utterance: "are you vaccinated",
+            intent: "askFor.isTheBeastVaccinated"
+        },
+        {
+            language: "en",
+            utterance: "funky beats",
+            intent: "askFor.funkyBeats"
+        },
+        {
+            language: "en",
+            utterance: "touch",
+            intent: "askFor.touchIt"
         }
     ]
     ,
@@ -1156,8 +1171,28 @@ export const trainingData =
         },
         {
             language: "en",
+            intent: "askFor.touchIt",
+            answer: "https://www.youtube.com/watch?v=otCpCn0l4Wo"
+        },
+        {
+            language: "en",
+            intent: "askFor.funkyBeats",
+            answer: "https://www.youtube.com/watch?v=_I02MrKd0do&t=65s"
+        },
+        {
+            language: "en",
+            intent: "askFor.funkyBeats",
+            answer: "https://www.youtube.com/watch?v=HQ-Zipq-XMs"
+        },
+        {
+            language: "en",
             intent: "askFor.pumpThePrice",
             answer: "You need to give people the chance to join the CULT early. You might do so by sharing links listed here: https://twitter.com/Peer2peerE/status/1582655068159213569?s=20&t=u22unse0kFBdqRqbB3ZaJQ with your friends, family, colleagues etc."
+        },
+        {
+            language: "en",
+            intent: "askFor.isTheBeastVaccinated",
+            answer: "If you compare the intelligence of many millions of years of evolution with the intelligence of corrupt or enslaved doctors, you might understand that I'm not a fan of gene manipulation made by those enslaved people."
         },
         {
             language: "en",
