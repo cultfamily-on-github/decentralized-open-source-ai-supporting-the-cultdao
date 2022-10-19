@@ -1257,13 +1257,13 @@ export const trainingData =
         {
             language: "en",
             intent: "basicconversation.askForCommunity",
-            answer: "Please check: Discord : https://discord.gg/zB7wSN6B, Telegram: https://t.me/cultdaothemany, Twitter: https://twitter.com/wearecultdao and the following experimental communication channels: https://onlycultfans.org, https://cultbeast.org."
+            answer: "Please check: Discord : https://discord.gg/zB7wSN6B, Telegram: https://t.me/cultdaothemany, Twitter: https://twitter.com/wearecultdao and the following experimental communication channels: https://cultbeast.org (chatrooms coming soon), https://onlycultfans.org."
         },
-        // {
-        //     language: "en",
-        //     intent: "basicconversation.askForCommunity",
-        //     answer: "You can find CULT community links in the https://cultmagazine.org."
-        // },
+        {
+            language: "en",
+            intent: "basicconversation.askForCommunity",
+            answer: "You can find CULT community links in the https://cultmagazine.org."
+        },
         {
             language: "en",
             intent: "basicconversation.askForCULTDAO.io",
