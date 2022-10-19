@@ -868,6 +868,21 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "youtube channel web3",
+            intent: "askFor.bankless"
+        },
+        {
+            language: "en",
+            utterance: "video channel crypto",
+            intent: "askFor.bankless"
+        },
+        {
+            language: "en",
+            utterance: "video channel decentralization",
+            intent: "askFor.bankless"
+        },
+        {
+            language: "en",
             utterance: "who is the best guardian",
             intent: "askFor.guardian"
         },
@@ -1147,7 +1162,7 @@ export const trainingData =
         {
             language: "en",
             intent: "askFor.opinionAboutCorruptPoliticians",
-            answer: "Corrupt politicians are afraid because they know we're right. They need to get out the way https://www.youtube.com/watch?v=0qanF-91aJo."
+            answer: "Corrupt politicians are afraid because they know we're right. They need to get out the way https://www.youtube.com/watch?v=cEuU64Zt4B0."
         },
         {
             language: "en",
