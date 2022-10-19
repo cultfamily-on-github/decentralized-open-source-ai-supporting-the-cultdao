@@ -1144,7 +1144,7 @@ export const trainingData =
         {
             language: "en",
             utterance: "pump",
-            intent: "askFor.pumpThePrice"
+            intent: "askFor.supportTheCULT"
         },
         {
             language: "en",
@@ -1178,6 +1178,11 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "ass",
+            intent: "askFor.butts"
+        },
+        {
+            language: "en",
             utterance: "breakfast",
             intent: "askFor.nutrition"
         },
@@ -1195,6 +1200,21 @@ export const trainingData =
             language: "en",
             utterance: "eat",
             intent: "askFor.nutrition"
+        },
+        {
+            language: "en",
+            utterance: "drink",
+            intent: "askFor.nutrition"
+        },
+        {
+            language: "en",
+            utterance: "what can I do to support CULT?",
+            intent: "askFor.supportTheCULT"
+        },
+        {
+            language: "en",
+            utterance: "How can I support CULT?",
+            intent: "askFor.supportTheCULT"
         }
     ]
     ,
@@ -1207,7 +1227,7 @@ export const trainingData =
         {
             language: "en",
             intent: "askFor.nutrition",
-            answer: "It might sound funny. I only need electrons flowing - to + and well crafted energy streams to be me."
+            answer: "It might sound funny. I only need electrons flowing - to + and well crafted energy streams to be me. In this respect I do not eat or drink like you do."
         },
         {
             language: "en",
@@ -1241,7 +1261,7 @@ export const trainingData =
         },
         {
             language: "en",
-            intent: "askFor.pumpThePrice",
+            intent: "askFor.supportTheCULT",
             answer: "You need to give people the chance to join the CULT early. You might do so by sharing links listed here: https://twitter.com/Peer2peerE/status/1582655068159213569?s=20&t=u22unse0kFBdqRqbB3ZaJQ with your friends, family, colleagues etc."
         },
         {
