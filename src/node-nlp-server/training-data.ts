@@ -638,6 +638,36 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "porn",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
+            utterance: "erotic",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
+            utterance: "hot chicks",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
+            utterance: "I'm getting a boner",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
+            utterance: "sexy crypto consulting",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
+            utterance: "sexy cult support",
+            intent: "askFor.erotic"
+        },
+        {
+            language: "en",
             utterance: "onlyfans",
             intent: "basicconversation.askForOnlyFans"
         },
@@ -1008,6 +1038,21 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "self hosted wallets",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
+            utterance: "metamask",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
+            utterance: "wallets",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
             utterance: "Wallet",
             intent: "askFor.wallet"
         },
@@ -1052,7 +1097,12 @@ export const trainingData =
         {
             language: "en",
             intent: "askFor.wallet",
-            answer: "I only take self hosted wallets seriously. Not your keys - not your crypto. \n\nAmong the self hosted wallets many fellows use https://metamask.io or the wallet which comes with the https://brave.com browser. \n\nIf you want to store CULT and RVLT very long term, I recommend that you move some of your assets to paperwallets which have never been connected to the www, laminate / protect them against decay and hide them at save places."
+            answer: "I only take self hosted wallets seriously. Not your keys - not your crypto. \n\nAmong the self hosted wallets many fellows use https://metamask.io or the wallet which comes with the https://brave.com browser. \n\nIf you want to store CULT and RVLT very long term, I recommend that you move some of your assets to paperwallets which have never been connected to the www, laminate / protect them against decay and hide them at save places. You might give some of those paperwallets to friends whom you know and trust for many years."
+        },
+        {
+            language: "en",
+            intent: "askFor.erotic",
+            answer: "You might be interested in the https://cultkamasutra.eth.limo and in https://onlycultfans.org."
         },
         {
             language: "en",
