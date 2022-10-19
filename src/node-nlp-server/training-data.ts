@@ -1215,6 +1215,11 @@ export const trainingData =
             language: "en",
             utterance: "How can I support CULT?",
             intent: "askFor.supportTheCULT"
+        },
+        {
+            language: "en",
+            utterance: "cult info material",
+            intent: "If you find valuable things around the CULT which are not linked in the https://cultmagazine.org yet, please update the mag via pull request."
         }
     ]
     ,
