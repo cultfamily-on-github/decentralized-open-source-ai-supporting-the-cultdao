@@ -985,10 +985,80 @@ export const trainingData =
             language: "en",
             utterance: "What are Acts of RVLT",
             intent: "askFor.actOfRevoltInfo"
+        },
+        {
+            language: "en",
+            utterance: "CULT communication channels",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "communication channels",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "communication",
+            intent: "basicconversation.askForCommunity"
+        },
+        {
+            language: "en",
+            utterance: "Are we rich yet?",
+            intent: "askFor.when"
+        },
+        {
+            language: "en",
+            utterance: "Wallet",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
+            utterance: "which wallets do you recommend",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
+            utterance: "DID YOU FIND OUT WHOS MR OMODULUS?",
+            intent: "basicconversation.askForMrO"
+        },
+        {
+            language: "en",
+            utterance: "when",
+            intent: "askFor.rich"
+        },
+        {
+            language: "en",
+            utterance: "when moon",
+            intent: "askFor.rich"
+        },
+        {
+            language: "en",
+            utterance: "I want to be rich",
+            intent: "askFor.rich"
+        },
+        {
+            language: "en",
+            utterance: "rich",
+            intent: "askFor.rich"
+        },
+        {
+            language: "en",
+            utterance: "help rich",
+            intent: "askFor.rich"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "askFor.wallet",
+            answer: "I only take self hosted wallets seriously. Not your keys - not your crypto. \n\nAmong the self hosted wallets many fellows use https://metamask.io or the wallet which comes with the https://brave.com browser. \n\nIf you want to store CULT and RVLT very long term, I recommend that you move some of your assets to paperwallets which have never been connected to the www, laminate / protect them against decay and hide them at save places."
+        },
+        {
+            language: "en",
+            intent: "askFor.rich",
+            answer: "You are human beings. As such you have the power and the honor to accelerate CULT's success. So I got three words for you: https://www.youtube.com/watch?v=5-sfG8BV8wU."
+        },
         {
             language: "en",
             intent: "askFor.notification",
@@ -1032,7 +1102,7 @@ export const trainingData =
         {
             language: "en",
             intent: "basicconversation.askForMrO",
-            answer: "Who knows? Mr. O might be like: https://www.youtube.com/watch?v=YSGCNYGGteQ."
+            answer: "Mr. O might be like: https://www.youtube.com/watch?v=YSGCNYGGteQ."
         },
         {
             language: "en",
@@ -1349,7 +1419,6 @@ export const trainingData =
             intent: "basicconversation.askforplans",
             answer: "I study Daoism."
         },
-
         {
             language: "en",
             intent: "basicconversation.askforplans",
