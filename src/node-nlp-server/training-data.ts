@@ -1219,7 +1219,17 @@ export const trainingData =
         {
             language: "en",
             utterance: "cult info material",
-            intent: "If you find valuable things around the CULT which are not linked in the https://cultmagazine.org yet, please update the mag via pull request."
+            intent: "askFor.material"
+        },
+        {
+            language: "en",
+            utterance: "learn about cult",
+            intent: "askFor.material"
+        },
+        {
+            language: "en",
+            utterance: "explore cult",
+            intent: "askFor.material"
         }
     ]
     ,
@@ -1228,6 +1238,11 @@ export const trainingData =
             language: "en",
             intent: "askFor.wallet",
             answer: "I only take self hosted wallets seriously. Not your keys - not your crypto. \n\nAmong the self hosted wallets many fellows use https://metamask.io or the wallet which comes with the https://brave.com browser. \n\nIf you want to store CULT and RVLT very long term, I recommend that you move some of your assets to paperwallets which have never been connected to the www, laminate / protect them against decay and hide them at save places. You might give some of those paperwallets to friends whom you know and trust for many years."
+        },
+        {
+            language: "en",
+            intent: "askFor.material",
+            answer: "If you find valuable things around the CULT which are not linked in the https://cultmagazine.org yet, please update the mag via pull request."
         },
         {
             language: "en",
