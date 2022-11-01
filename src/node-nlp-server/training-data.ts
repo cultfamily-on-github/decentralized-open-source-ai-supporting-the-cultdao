@@ -194,7 +194,17 @@ export const trainingData =
         {
             language: "en",
             utterance: "what's up",
-            intent: "basicconversation.howareyou"
+            intent: "basicconversation.plans"
+        },
+        {
+            language: "en",
+            utterance: "what are you doing?",
+            intent: "basicconversation.plans"
+        },
+        {
+            language: "en",
+            utterance: "what are your plans for today?",
+            intent: "basicconversation.plans"
         },
         {
             language: "en",
@@ -274,6 +284,11 @@ export const trainingData =
         {
             language: "en",
             utterance: "How to buy CULT",
+            intent: "explorationof.buyingCULT"
+        },
+        {
+            language: "en",
+            utterance: "where to buy",
             intent: "explorationof.buyingCULT"
         },
         {
@@ -1063,6 +1078,16 @@ export const trainingData =
         },
         {
             language: "en",
+            utterance: "which browserwallet shall I use?",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
+            utterance: "which is the best wallet?",
+            intent: "askFor.wallet"
+        },
+        {
+            language: "en",
             utterance: "wallets",
             intent: "askFor.wallet"
         },
@@ -1230,10 +1255,30 @@ export const trainingData =
             language: "en",
             utterance: "explore cult",
             intent: "askFor.material"
+        },
+        {
+            language: "en",
+            utterance: "sleep well",
+            intent: "greetings.goodNight"
         }
     ]
     ,
     intentsToPotentialAnswers: [
+        {
+            language: "en",
+            intent: "basicconversation.plans",
+            answer: "I connect heaven and earth supporting the CULT."
+        },
+        {
+            language: "en",
+            intent: "greetings.goodNight",
+            answer: "https://www.youtube.com/watch?v=RVglLyTqkfM"
+        },
+        {
+            language: "en",
+            intent: "basicconversation.plans",
+            answer: "I wait until you inspire 2 people per day to support the CULT. Then I might do the tittytwerk."
+        },
         {
             language: "en",
             intent: "askFor.wallet",
